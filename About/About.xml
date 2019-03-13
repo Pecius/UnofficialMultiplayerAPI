@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Unofficial multiplayer API - DEV</name>
+	<author>Pecius</author>
+	<supportedVersions><li>1.0</li></supportedVersions>
+	<description>An API for Zetrith's multiplayer mod.</description>
+	<url>https://github.com/Pecius/UnofficialMultiplayerAPI</url>
+</ModMetaData>

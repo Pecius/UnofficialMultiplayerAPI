@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="StandingLampBase" >
+    <defName>StandingLampMPExample</defName>
+    <label>standing lamp rgb</label>
+    <description>An example for UMP</description>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>12</glowRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+      </li>
+	  
+	  <li Class="UMPExample1.CompProperties_GlowerController"></li>
+    </comps>
+  </ThingDef>
+  
+</Defs>
