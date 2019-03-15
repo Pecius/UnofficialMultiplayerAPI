@@ -44,7 +44,7 @@
   - [QueueOrder_Down](#F-UnofficialMultiplayerAPI-SyncContext-QueueOrder_Down 'UnofficialMultiplayerAPI.SyncContext.QueueOrder_Down')
   - [WorldSelected](#F-UnofficialMultiplayerAPI-SyncContext-WorldSelected 'UnofficialMultiplayerAPI.SyncContext.WorldSelected')
 - [SyncMethodAttribute](#T-UnofficialMultiplayerAPI-SyncMethodAttribute 'UnofficialMultiplayerAPI.SyncMethodAttribute')
-  - [#ctor(context)](#M-UnofficialMultiplayerAPI-SyncMethodAttribute-#ctor-UnofficialMultiplayerAPI-SyncContext- 'UnofficialMultiplayerAPI.SyncMethodAttribute.#ctor(UnofficialMultiplayerAPI.SyncContext)')
+  - [#ctor(context,cancelIfAnyArgNull,cancelIfNoSelectedMapObjects,cancelIfNoSelectedWorldObjects,exposeParameters)](#M-UnofficialMultiplayerAPI-SyncMethodAttribute-#ctor-UnofficialMultiplayerAPI-SyncContext- 'UnofficialMultiplayerAPI.SyncMethodAttribute.#ctor(UnofficialMultiplayerAPI.SyncContext)')
 
 <a name='T-UnofficialMultiplayerAPI-IMultiplayerInit'></a>
 ## IMultiplayerInit `type`
@@ -334,7 +334,7 @@ Instructs method to send context along with the call
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| context | [UnofficialMultiplayerAPI.SyncContext](#T-UnofficialMultiplayerAPI-SyncContext 'UnofficialMultiplayerAPI.SyncContext') | Context |
+| context | [UnofficialMultiplayerAPI.SyncContext](#T-UnofficialMultiplayerAPI-SyncContext 'UnofficialMultiplayerAPI.SyncContext') | [SyncContext](#T-UnofficialMultiplayerAPI-SyncContext 'UnofficialMultiplayerAPI.SyncContext') |
 
 ##### Remarks
 
@@ -625,10 +625,10 @@ UnofficialMultiplayerAPI
 An attribute that is used to mark methods for syncing.
 
 <a name='M-UnofficialMultiplayerAPI-SyncMethodAttribute-#ctor-UnofficialMultiplayerAPI-SyncContext-'></a>
-### #ctor(context) `constructor`
+### #ctor(context,cancelIfAnyArgNull,cancelIfNoSelectedMapObjects,cancelIfNoSelectedWorldObjects,exposeParameters) `constructor`
 
 ##### Parameters
 
 | Name | Type | Description |
 | ---- | ---- | ----------- |
-| context | [UnofficialMultiplayerAPI.SyncContext](#T-UnofficialMultiplayerAPI-SyncContext 'UnofficialMultiplayerAPI.SyncContext') | Context |
+| context | [UnofficialMultiplayerAPI.SyncContext](#T-UnofficialMultiplayerAPI-SyncContext 'UnofficialMultiplayerAPI.SyncContext') | Context (see [SyncContext](#T-UnofficialMultiplayerAPI-SyncContext 'UnofficialMultiplayerAPI.SyncContext')) |

@@ -38,8 +38,56 @@ namespace UnofficialMultiplayerAPIHost
 
 			foreach(MethodInfo method in allMethods)
 			{
-				Log.Debug($"Installing {method.Name}");
-				Sync.RegisterSyncMethod(method, null);
+				var attribute = method.TryGetAttribute<UnofficialMultiplayerAPI.SyncMethodAttribute>();
+
+				Log.Debug($"Installing {method.DeclaringType.FullName}::{method}");
+				int[] exposeParameters = attribute.exposeParameters;
+				int paramNum = method.GetParameters().Length;
+
+				if (exposeParameters != null)
+				{
+					if (exposeParameters.Length != paramNum)
+					{
+						Log.Error($"Failed to register a method: Invalid number of parameters to expose in SyncMethod attribute applied to {method.DeclaringType.FullName}::{method}. Expected {paramNum}, got {exposeParameters.Length}");
+						continue;
+					}
+					else if(exposeParameters.Any(p => p < 0 || p >= paramNum))
+					{
+						Log.Error($"Failed to register a method: One or more indexes of parameters to expose in SyncMethod attribute applied to {method.DeclaringType.FullName}::{method} is invalid.");
+						continue;
+					}
+				}
+
+				SyncMethod sm = Sync.RegisterSyncMethod(method, null);
+
+				sm.SetContext((SyncContext)(int)attribute.context);
+
+				if (attribute.cancelIfAnyArgNull)
+					sm.CancelIfAnyArgNull();
+
+				if (attribute.cancelIfNoSelectedMapObjects)
+					sm.CancelIfNoSelectedMapObjects();
+
+				if (attribute.cancelIfNoSelectedWorldObjects)
+					sm.CancelIfNoSelectedWorldObjects();
+
+				if(exposeParameters != null)
+				{
+					int i = 0;
+
+					try
+					{
+						for (; i < exposeParameters.Length; i++)
+						{
+							Log.Debug($"Exposing parameter {exposeParameters[i]}");
+							sm.ExposeParameter(exposeParameters[i]);
+						}
+					}
+					catch (Exception exc)
+					{
+						Log.Error($"An exception occurred while exposing parameter {i} ({method.GetParameters()[i]}) for method {method.DeclaringType.FullName}::{method}: {exc}");
+					}
+				}
 			}
 
 			var initializers = allTypes.Where(t => !t.IsInterface && typeof(UnofficialMultiplayerAPI.IMultiplayerInit).IsAssignableFrom(t));

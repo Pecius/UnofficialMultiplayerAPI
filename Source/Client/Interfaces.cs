@@ -32,25 +32,31 @@ namespace UnofficialMultiplayerAPI
 	public class SyncMethodAttribute : Attribute
 	{
 		public SyncContext context;
+		public bool cancelIfAnyArgNull = false;
+		public bool cancelIfNoSelectedMapObjects = false;
+		public bool cancelIfNoSelectedWorldObjects = false;
+		public int[] exposeParameters;
 
-		/// <param name="context">Context</param>
+		/// <param name="context">Context (see <see cref="SyncContext"/>)</param>
+		/// <param name="cancelIfAnyArgNull">Instructs SyncMethod to cancel synchronization if any arg is null (see <see cref="ISyncMethod.CancelIfAnyArgNull"/>)</param>
+		/// <param name="cancelIfNoSelectedMapObjects">Instructs SyncMethod to cancel synchronization if no map objects were selected during call replication(see <see cref="ISyncMethod.CancelIfNoSelectedMapObjects"/>)</param>
+		/// <param name="cancelIfNoSelectedWorldObjects">Instructs SyncMethod to cancel synchronization if no world objects were selected during call replication(see <see cref="ISyncMethod.CancelIfNoSelectedWorldObjects"/>)</param>
+		/// <param name="exposeParameters">A list of types to expose (see <see cref="ISyncMethod.ExposeParameter"/>)</param>
 		public SyncMethodAttribute(SyncContext context = SyncContext.None)
 		{
 			this.context = context;
 		}
 	}
 
-	public struct SyncType
+	public class SyncType
 	{
 		public readonly Type type;
-		public bool expose;
-		public bool contextMap;
+		public bool expose = false;
+		public bool contextMap = false;
 
 		public SyncType(Type type)
 		{
 			this.type = type;
-			this.expose = false;
-			contextMap = false;
 		}
 	}
 
@@ -162,7 +168,7 @@ namespace UnofficialMultiplayerAPI
 		/// Instructs method to send context along with the call
 		/// </summary>
 		/// <remarks>Context is restored after method is called</remarks>
-		/// <param name="context">Context</param>
+		/// <param name="context"><see cref="SyncContext"/></param>
 		/// <returns><see cref="ISyncMethod"/> self</returns>
 		ISyncMethod SetContext(SyncContext context);
 
