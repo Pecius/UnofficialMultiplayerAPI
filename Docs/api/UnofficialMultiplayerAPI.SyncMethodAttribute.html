@@ -1,0 +1,379 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SyncMethodAttribute
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SyncMethodAttribute
+   ">
+    <meta name="generator" content="docfx 2.40.12.0">
+    
+    <link rel="shortcut icon" href="../favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc">
+    <meta property="docfx:tocrel" content="toc">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../api/UnofficialMultiplayerAPI.html" title="API Documentation">API Documentation</a>
+                      </li>
+                </ul>    </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="UnofficialMultiplayerAPI.html" title="UnofficialMultiplayerAPI" class="">UnofficialMultiplayerAPI</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="UnofficialMultiplayerAPI.IMultiplayerInit.html" title="IMultiplayerInit" class="">IMultiplayerInit</a>
+                          </li>
+                          <li class="">
+                            <a href="UnofficialMultiplayerAPI.ISyncable.html" title="ISyncable" class="">ISyncable</a>
+                          </li>
+                          <li class="">
+                            <a href="UnofficialMultiplayerAPI.ISyncField.html" title="ISyncField" class="">ISyncField</a>
+                          </li>
+                          <li class="">
+                            <a href="UnofficialMultiplayerAPI.ISyncMethod.html" title="ISyncMethod" class="">ISyncMethod</a>
+                          </li>
+                          <li class="">
+                            <a href="UnofficialMultiplayerAPI.MPApi.html" title="MPApi" class="">MPApi</a>
+                          </li>
+                          <li class="">
+                            <a href="UnofficialMultiplayerAPI.SyncContext.html" title="SyncContext" class="">SyncContext</a>
+                          </li>
+                          <li class="">
+                            <a href="UnofficialMultiplayerAPI.SyncerAttribute.html" title="SyncerAttribute" class="">SyncerAttribute</a>
+                          </li>
+                          <li class="active">
+                            <a href="UnofficialMultiplayerAPI.SyncMethodAttribute.html" title="SyncMethodAttribute" class="active">SyncMethodAttribute</a>
+                          </li>
+                          <li class="">
+                            <a href="UnofficialMultiplayerAPI.SyncWorker.html" title="SyncWorker" class="">SyncWorker</a>
+                          </li>
+                          <li class="">
+                            <a href="UnofficialMultiplayerAPI.UninitializedAPI.html" title="UninitializedAPI" class="">UninitializedAPI</a>
+                          </li>
+                        </ul>  </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UnofficialMultiplayerAPI.SyncMethodAttribute">
+  
+  
+  <h1 id="UnofficialMultiplayerAPI_SyncMethodAttribute" data-uid="UnofficialMultiplayerAPI.SyncMethodAttribute" class="text-break">Class SyncMethodAttribute
+  </h1>
+  <div class="markdown level0 summary"><p>An attribute that is used to mark methods for syncing.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.attribute">Attribute</a></div>
+    <div class="level2"><span class="xref">SyncMethodAttribute</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UnofficialMultiplayerAPI.html">UnofficialMultiplayerAPI</a></h6>
+  <h6><strong>Assembly</strong>: 0UnofficialMultiplayerAPI.dll</h6>
+  <h5 id="UnofficialMultiplayerAPI_SyncMethodAttribute_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[AttributeUsage(AttributeTargets.Method)]
+public class SyncMethodAttribute : Attribute, _Attribute</code></pre>
+  </div>
+  <h5 id="UnofficialMultiplayerAPI_SyncMethodAttribute_examples"><strong>Examples</strong></h5>
+  <p><p>An example showing how to mark a method for syncing.</p></p>
+<pre><code>[SyncMethod]
+public void MyMethod(...)
+{
+    ...
+}</code></pre>
+
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="UnofficialMultiplayerAPI_SyncMethodAttribute__ctor_" data-uid="UnofficialMultiplayerAPI.SyncMethodAttribute.#ctor*"></a>
+  <h4 id="UnofficialMultiplayerAPI_SyncMethodAttribute__ctor_UnofficialMultiplayerAPI_SyncContext_" data-uid="UnofficialMultiplayerAPI.SyncMethodAttribute.#ctor(UnofficialMultiplayerAPI.SyncContext)">SyncMethodAttribute(SyncContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SyncMethodAttribute(SyncContext context = SyncContext.None)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnofficialMultiplayerAPI.SyncContext.html">SyncContext</a></td>
+        <td><span class="parametername">context</span></td>
+        <td><p>Context</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="UnofficialMultiplayerAPI_SyncMethodAttribute_cancelIfAnyArgNull" data-uid="UnofficialMultiplayerAPI.SyncMethodAttribute.cancelIfAnyArgNull">cancelIfAnyArgNull</h4>
+  <div class="markdown level1 summary"><p>Instructs SyncMethod to cancel synchronization if any arg is null (see <a class="xref" href="UnofficialMultiplayerAPI.ISyncMethod.html#UnofficialMultiplayerAPI_ISyncMethod_CancelIfAnyArgNull">CancelIfAnyArgNull()</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool cancelIfAnyArgNull</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="UnofficialMultiplayerAPI_SyncMethodAttribute_cancelIfNoSelectedMapObjects" data-uid="UnofficialMultiplayerAPI.SyncMethodAttribute.cancelIfNoSelectedMapObjects">cancelIfNoSelectedMapObjects</h4>
+  <div class="markdown level1 summary"><p>Instructs SyncMethod to cancel synchronization if no map objects were selected during the call (see <a class="xref" href="UnofficialMultiplayerAPI.ISyncMethod.html#UnofficialMultiplayerAPI_ISyncMethod_CancelIfNoSelectedMapObjects">CancelIfNoSelectedMapObjects()</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool cancelIfNoSelectedMapObjects</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="UnofficialMultiplayerAPI_SyncMethodAttribute_cancelIfNoSelectedWorldObjects" data-uid="UnofficialMultiplayerAPI.SyncMethodAttribute.cancelIfNoSelectedWorldObjects">cancelIfNoSelectedWorldObjects</h4>
+  <div class="markdown level1 summary"><p>Instructs SyncMethod to cancel synchronization if no world objects were selected during call replication(see <a class="xref" href="UnofficialMultiplayerAPI.ISyncMethod.html#UnofficialMultiplayerAPI_ISyncMethod_CancelIfNoSelectedWorldObjects">CancelIfNoSelectedWorldObjects()</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool cancelIfNoSelectedWorldObjects</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="UnofficialMultiplayerAPI_SyncMethodAttribute_context" data-uid="UnofficialMultiplayerAPI.SyncMethodAttribute.context">context</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SyncContext context</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnofficialMultiplayerAPI.SyncContext.html">SyncContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="UnofficialMultiplayerAPI_SyncMethodAttribute_exposeParameters" data-uid="UnofficialMultiplayerAPI.SyncMethodAttribute.exposeParameters">exposeParameters</h4>
+  <div class="markdown level1 summary"><p>A list of types to expose (see <a class="xref" href="UnofficialMultiplayerAPI.ISyncMethod.html#UnofficialMultiplayerAPI_ISyncMethod_ExposeParameter_System_Int32_">ExposeParameter(Int32)</a>)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int[] exposeParameters</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="UnofficialMultiplayerAPI_SyncMethodAttribute_setDebugOnly" data-uid="UnofficialMultiplayerAPI.SyncMethodAttribute.setDebugOnly">setDebugOnly</h4>
+  <div class="markdown level1 summary"><p>Instructs SyncMethod to synchronize only in debug mode (see <a class="xref" href="UnofficialMultiplayerAPI.ISyncMethod.html#UnofficialMultiplayerAPI_ISyncMethod_SetDebugOnly">SetDebugOnly()</a>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool setDebugOnly</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

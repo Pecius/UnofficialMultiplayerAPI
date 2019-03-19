@@ -5,6 +5,9 @@ using System.Reflection;
 
 namespace UnofficialMultiplayerAPI
 {
+	/// <summary>
+	/// An exception that is thrown if you try to use the API without avaiable host.
+	/// </summary>
 	public class UninitializedAPI : Exception
 	{
 	}
@@ -16,6 +19,8 @@ namespace UnofficialMultiplayerAPI
 		public bool IsInMultiplayer => false;
 
 		public string PlayerName => null;
+
+		//public SyncerDictionary Syncers => throw new UninitializedAPI();
 
 		public void FieldWatchPostfix()
 		{

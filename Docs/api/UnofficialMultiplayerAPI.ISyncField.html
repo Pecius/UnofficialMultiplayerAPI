@@ -1,0 +1,496 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface ISyncField
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface ISyncField
+   ">
+    <meta name="generator" content="docfx 2.40.12.0">
+    
+    <link rel="shortcut icon" href="../favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc">
+    <meta property="docfx:tocrel" content="toc">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../api/UnofficialMultiplayerAPI.html" title="API Documentation">API Documentation</a>
+                      </li>
+                </ul>    </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="UnofficialMultiplayerAPI.html" title="UnofficialMultiplayerAPI" class="">UnofficialMultiplayerAPI</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="UnofficialMultiplayerAPI.IMultiplayerInit.html" title="IMultiplayerInit" class="">IMultiplayerInit</a>
+                          </li>
+                          <li class="">
+                            <a href="UnofficialMultiplayerAPI.ISyncable.html" title="ISyncable" class="">ISyncable</a>
+                          </li>
+                          <li class="active">
+                            <a href="UnofficialMultiplayerAPI.ISyncField.html" title="ISyncField" class="active">ISyncField</a>
+                          </li>
+                          <li class="">
+                            <a href="UnofficialMultiplayerAPI.ISyncMethod.html" title="ISyncMethod" class="">ISyncMethod</a>
+                          </li>
+                          <li class="">
+                            <a href="UnofficialMultiplayerAPI.MPApi.html" title="MPApi" class="">MPApi</a>
+                          </li>
+                          <li class="">
+                            <a href="UnofficialMultiplayerAPI.SyncContext.html" title="SyncContext" class="">SyncContext</a>
+                          </li>
+                          <li class="">
+                            <a href="UnofficialMultiplayerAPI.SyncerAttribute.html" title="SyncerAttribute" class="">SyncerAttribute</a>
+                          </li>
+                          <li class="">
+                            <a href="UnofficialMultiplayerAPI.SyncMethodAttribute.html" title="SyncMethodAttribute" class="">SyncMethodAttribute</a>
+                          </li>
+                          <li class="">
+                            <a href="UnofficialMultiplayerAPI.SyncWorker.html" title="SyncWorker" class="">SyncWorker</a>
+                          </li>
+                          <li class="">
+                            <a href="UnofficialMultiplayerAPI.UninitializedAPI.html" title="UninitializedAPI" class="">UninitializedAPI</a>
+                          </li>
+                        </ul>  </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UnofficialMultiplayerAPI.ISyncField">
+  
+  
+  <h1 id="UnofficialMultiplayerAPI_ISyncField" data-uid="UnofficialMultiplayerAPI.ISyncField" class="text-break">Interface ISyncField
+  </h1>
+  <div class="markdown level0 summary"><p>SyncField interface.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UnofficialMultiplayerAPI.html">UnofficialMultiplayerAPI</a></h6>
+  <h6><strong>Assembly</strong>: 0UnofficialMultiplayerAPI.dll</h6>
+  <h5 id="UnofficialMultiplayerAPI_ISyncField_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ISyncField</code></pre>
+  </div>
+  <h5 id="UnofficialMultiplayerAPI_ISyncField_examples"><strong>Examples</strong></h5>
+  <p><p>Creates and registers a SyncField that points to <code>myField</code> in object of type <code>MyType</code> and enables its change buffer.</p></p>
+<pre><code>MPApi.SyncField(typeof(MyType), &quot;myField&quot;).SetBufferChanges();</code></pre>
+<p><p>Creates and registers a SyncField that points to <code>myField</code> which resides in <code>MyStaticClass</code>.</p></p>
+<pre><code>MPApi.SyncField(null, &quot;MyAssemblyNamespace.MyStaticClass.myField&quot;);</code></pre>
+<p><p>Creates and registers a SyncField that points to <code>myField</code> that resides in an object stored by myEnumberable defined in an object of type <code>MyType</code>.</p>
+<p>To watch this one you have to supply an index in <a class="xref" href="UnofficialMultiplayerAPI.ISyncField.html#UnofficialMultiplayerAPI_ISyncField_Watch_System_Object_System_Object_">Watch(Object, Object)</a>.</p></p>
+<pre><code>MPApi.SyncField(typeof(MyType), &quot;myEnumerable/[]/myField&quot;);</code></pre>
+
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="UnofficialMultiplayerAPI_ISyncField_CancelIfValueNull_" data-uid="UnofficialMultiplayerAPI.ISyncField.CancelIfValueNull*"></a>
+  <h4 id="UnofficialMultiplayerAPI_ISyncField_CancelIfValueNull" data-uid="UnofficialMultiplayerAPI.ISyncField.CancelIfValueNull">CancelIfValueNull()</h4>
+  <div class="markdown level1 summary"><p>Instructs SyncField to cancel synchronization if the value of the member it&apos;s pointing at is null.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ISyncField CancelIfValueNull()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnofficialMultiplayerAPI.ISyncField.html">ISyncField</a></td>
+        <td><p>self</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnofficialMultiplayerAPI_ISyncField_InGameLoop_" data-uid="UnofficialMultiplayerAPI.ISyncField.InGameLoop*"></a>
+  <h4 id="UnofficialMultiplayerAPI_ISyncField_InGameLoop" data-uid="UnofficialMultiplayerAPI.ISyncField.InGameLoop">InGameLoop()</h4>
+  <div class="markdown level1 summary"><p>Instructs SyncField to sync in game loop.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ISyncField InGameLoop()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnofficialMultiplayerAPI.ISyncField.html">ISyncField</a></td>
+        <td><p>self</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnofficialMultiplayerAPI_ISyncField_PostApply_" data-uid="UnofficialMultiplayerAPI.ISyncField.PostApply*"></a>
+  <h4 id="UnofficialMultiplayerAPI_ISyncField_PostApply_System_Action_System_Object_System_Object__" data-uid="UnofficialMultiplayerAPI.ISyncField.PostApply(System.Action{System.Object,System.Object})">PostApply(Action&lt;Object, Object&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds an Action that runs after a field is synchronized.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ISyncField PostApply(Action&lt;object, object&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p>An action ran after a field is synchronized. Called with target and value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnofficialMultiplayerAPI.ISyncField.html">ISyncField</a></td>
+        <td><p>self</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnofficialMultiplayerAPI_ISyncField_PreApply_" data-uid="UnofficialMultiplayerAPI.ISyncField.PreApply*"></a>
+  <h4 id="UnofficialMultiplayerAPI_ISyncField_PreApply_System_Action_System_Object_System_Object__" data-uid="UnofficialMultiplayerAPI.ISyncField.PreApply(System.Action{System.Object,System.Object})">PreApply(Action&lt;Object, Object&gt;)</h4>
+  <div class="markdown level1 summary"><p>Adds an Action that runs before a field is synchronized.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ISyncField PreApply(Action&lt;object, object&gt; action)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
+        <td><span class="parametername">action</span></td>
+        <td><p>An action ran before a field is synchronized. Called with target and value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnofficialMultiplayerAPI.ISyncField.html">ISyncField</a></td>
+        <td><p>self</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnofficialMultiplayerAPI_ISyncField_SetBufferChanges_" data-uid="UnofficialMultiplayerAPI.ISyncField.SetBufferChanges*"></a>
+  <h4 id="UnofficialMultiplayerAPI_ISyncField_SetBufferChanges" data-uid="UnofficialMultiplayerAPI.ISyncField.SetBufferChanges">SetBufferChanges()</h4>
+  <div class="markdown level1 summary"><p>Instructs SyncField to use a buffer instead of syncing instantly (when <a class="xref" href="UnofficialMultiplayerAPI.MPApi.html#UnofficialMultiplayerAPI_MPApi_FieldWatchPostfix">FieldWatchPostfix()</a> is called).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ISyncField SetBufferChanges()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnofficialMultiplayerAPI.ISyncField.html">ISyncField</a></td>
+        <td><p>self</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnofficialMultiplayerAPI_ISyncField_SetDebugOnly_" data-uid="UnofficialMultiplayerAPI.ISyncField.SetDebugOnly*"></a>
+  <h4 id="UnofficialMultiplayerAPI_ISyncField_SetDebugOnly" data-uid="UnofficialMultiplayerAPI.ISyncField.SetDebugOnly">SetDebugOnly()</h4>
+  <div class="markdown level1 summary"><p>Instructs SyncField to synchronize only in debug mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ISyncField SetDebugOnly()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnofficialMultiplayerAPI.ISyncField.html">ISyncField</a></td>
+        <td><p>self</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnofficialMultiplayerAPI_ISyncField_SetHostOnly_" data-uid="UnofficialMultiplayerAPI.ISyncField.SetHostOnly*"></a>
+  <h4 id="UnofficialMultiplayerAPI_ISyncField_SetHostOnly" data-uid="UnofficialMultiplayerAPI.ISyncField.SetHostOnly">SetHostOnly()</h4>
+  <div class="markdown level1 summary"><p>Instructs SyncField to synchronize only if it&apos;s invoked by the host.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ISyncField SetHostOnly()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnofficialMultiplayerAPI.ISyncField.html">ISyncField</a></td>
+        <td><p>self</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnofficialMultiplayerAPI_ISyncField_SetVersion_" data-uid="UnofficialMultiplayerAPI.ISyncField.SetVersion*"></a>
+  <h4 id="UnofficialMultiplayerAPI_ISyncField_SetVersion_System_Int32_" data-uid="UnofficialMultiplayerAPI.ISyncField.SetVersion(System.Int32)">SetVersion(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ISyncField SetVersion(int version)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">version</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnofficialMultiplayerAPI.ISyncField.html">ISyncField</a></td>
+        <td><p>self</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnofficialMultiplayerAPI_ISyncField_Watch_" data-uid="UnofficialMultiplayerAPI.ISyncField.Watch*"></a>
+  <h4 id="UnofficialMultiplayerAPI_ISyncField_Watch_System_Object_System_Object_" data-uid="UnofficialMultiplayerAPI.ISyncField.Watch(System.Object,System.Object)">Watch(Object, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Watch(object target = null, object index = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">target</span></td>
+        <td><p>An object of type set in the <a class="xref" href="UnofficialMultiplayerAPI.ISyncField.html">ISyncField</a>. Set to null if you&apos;re watching a static field.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>Index in the field path set in <a class="xref" href="UnofficialMultiplayerAPI.ISyncField.html">ISyncField</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

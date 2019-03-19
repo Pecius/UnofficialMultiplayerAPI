@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>How to use the API </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="How to use the API ">
+    <meta name="generator" content="docfx 2.40.12.0">
+    
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc">
+    <meta property="docfx:tocrel" content="toc">
+    
+    <meta property="docfx:rel" content="">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="api/UnofficialMultiplayerAPI.html" title="API Documentation">API Documentation</a>
+                      </li>
+                </ul>    </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="how-to-use-the-api">How to use the API</h1>
+
+<p>Download and copy 0UnofficialMultiplayerAPI.dll to your mod&#39;s <em>Assemblies</em> directory and reference it in your project.</p>
+<p>Check the API documentation and examples for further details.</p>
+<h1 id="0unofficialmultiplayerapi">0UnofficialMultiplayerAPI</h1>
+<p>This is basically an interface, a glorified header file in an assembly with some additional sugar coating.</p>
+<p>It acts as a movable bridge between your mod and the API host, it only depends on the game itself so your mod won&#39;t suddenly become dependent on the multiplayer mod.</p>
+<p>Since only one assembly with the same name (and assembly version) is loaded at the time, your mod will always use its newest version (that is included with the host), even if you referenced an older one.</p>
+<p>Thankfully that doesn&#39;t mean your mod will break if that happens, as additions of the new classes and methods are not changing much from the point of view of your assembly.</p>
+<p>Additionally it also informs clients that they&#39;re missing the required host addon and points them either to workshop or to releases on github (if your mod uses the API and multiplayer mod is detected as well).</p>
+<h1 id="how-to-compile-the-api">How to compile the API</h1>
+<p>Place the repo root in a <em>Unofficial Multiplayer API</em> folder inside of <em>Mods</em> directory (<em>RimWorld/Mods</em>).</p>
+<p>You also need the <a href="https://github.com/Zetrith/Multiplayer">Multiplayer mod</a> placed in the same directory.</p>
+<p>To compile it simply use the solution called <em>Unofficial_multiplayer_API.sln</em> found in <em>Sources</em> directory.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

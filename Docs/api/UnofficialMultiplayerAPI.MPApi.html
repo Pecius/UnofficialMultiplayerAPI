@@ -1,0 +1,544 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MPApi
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MPApi
+   ">
+    <meta name="generator" content="docfx 2.40.12.0">
+    
+    <link rel="shortcut icon" href="../favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc">
+    <meta property="docfx:tocrel" content="toc">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../api/UnofficialMultiplayerAPI.html" title="API Documentation">API Documentation</a>
+                      </li>
+                </ul>    </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="UnofficialMultiplayerAPI.html" title="UnofficialMultiplayerAPI" class="">UnofficialMultiplayerAPI</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="UnofficialMultiplayerAPI.IMultiplayerInit.html" title="IMultiplayerInit" class="">IMultiplayerInit</a>
+                          </li>
+                          <li class="">
+                            <a href="UnofficialMultiplayerAPI.ISyncable.html" title="ISyncable" class="">ISyncable</a>
+                          </li>
+                          <li class="">
+                            <a href="UnofficialMultiplayerAPI.ISyncField.html" title="ISyncField" class="">ISyncField</a>
+                          </li>
+                          <li class="">
+                            <a href="UnofficialMultiplayerAPI.ISyncMethod.html" title="ISyncMethod" class="">ISyncMethod</a>
+                          </li>
+                          <li class="active">
+                            <a href="UnofficialMultiplayerAPI.MPApi.html" title="MPApi" class="active">MPApi</a>
+                          </li>
+                          <li class="">
+                            <a href="UnofficialMultiplayerAPI.SyncContext.html" title="SyncContext" class="">SyncContext</a>
+                          </li>
+                          <li class="">
+                            <a href="UnofficialMultiplayerAPI.SyncerAttribute.html" title="SyncerAttribute" class="">SyncerAttribute</a>
+                          </li>
+                          <li class="">
+                            <a href="UnofficialMultiplayerAPI.SyncMethodAttribute.html" title="SyncMethodAttribute" class="">SyncMethodAttribute</a>
+                          </li>
+                          <li class="">
+                            <a href="UnofficialMultiplayerAPI.SyncWorker.html" title="SyncWorker" class="">SyncWorker</a>
+                          </li>
+                          <li class="">
+                            <a href="UnofficialMultiplayerAPI.UninitializedAPI.html" title="UninitializedAPI" class="">UninitializedAPI</a>
+                          </li>
+                        </ul>  </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UnofficialMultiplayerAPI.MPApi">
+  
+  
+  <h1 id="UnofficialMultiplayerAPI_MPApi" data-uid="UnofficialMultiplayerAPI.MPApi" class="text-break">Class MPApi
+  </h1>
+  <div class="markdown level0 summary"><p>The primary static class that contains methods used to interface with the multiplayer mod.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">MPApi</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UnofficialMultiplayerAPI.html">UnofficialMultiplayerAPI</a></h6>
+  <h6><strong>Assembly</strong>: 0UnofficialMultiplayerAPI.dll</h6>
+  <h5 id="UnofficialMultiplayerAPI_MPApi_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[StaticConstructorOnStartup]
+public static class MPApi</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="UnofficialMultiplayerAPI_MPApi_enabled" data-uid="UnofficialMultiplayerAPI.MPApi.enabled">enabled</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly bool enabled</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>Returns <span class="xref">true</span> if API is initialized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="UnofficialMultiplayerAPI_MPApi_IsHosting_" data-uid="UnofficialMultiplayerAPI.MPApi.IsHosting*"></a>
+  <h4 id="UnofficialMultiplayerAPI_MPApi_IsHosting" data-uid="UnofficialMultiplayerAPI.MPApi.IsHosting">IsHosting</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsHosting { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>Returns <span class="xref">true</span> if currently running on a host.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnofficialMultiplayerAPI_MPApi_IsInMultiplayer_" data-uid="UnofficialMultiplayerAPI.MPApi.IsInMultiplayer*"></a>
+  <h4 id="UnofficialMultiplayerAPI_MPApi_IsInMultiplayer" data-uid="UnofficialMultiplayerAPI.MPApi.IsInMultiplayer">IsInMultiplayer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsInMultiplayer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>Returns <span class="xref">true</span> if currently running in a multiplayer session (both on client and host).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnofficialMultiplayerAPI_MPApi_PlayerName_" data-uid="UnofficialMultiplayerAPI.MPApi.PlayerName*"></a>
+  <h4 id="UnofficialMultiplayerAPI_MPApi_PlayerName" data-uid="UnofficialMultiplayerAPI.MPApi.PlayerName">PlayerName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string PlayerName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>Returns local player&apos;s name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="UnofficialMultiplayerAPI_MPApi_FieldWatchPostfix_" data-uid="UnofficialMultiplayerAPI.MPApi.FieldWatchPostfix*"></a>
+  <h4 id="UnofficialMultiplayerAPI_MPApi_FieldWatchPostfix" data-uid="UnofficialMultiplayerAPI.MPApi.FieldWatchPostfix">FieldWatchPostfix()</h4>
+  <div class="markdown level1 summary"><p>Ends the current synchronization stack and executes it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FieldWatchPostfix()</code></pre>
+  </div>
+  <h5 id="UnofficialMultiplayerAPI_MPApi_FieldWatchPostfix_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Has to be called after invoking Watch methods.</p>
+<p>See also <a class="xref" href="UnofficialMultiplayerAPI.ISyncField.html#UnofficialMultiplayerAPI_ISyncField_Watch_System_Object_System_Object_">Watch(Object, Object)</a>.</p>
+</div>
+  
+  
+  <a id="UnofficialMultiplayerAPI_MPApi_FieldWatchPrefix_" data-uid="UnofficialMultiplayerAPI.MPApi.FieldWatchPrefix*"></a>
+  <h4 id="UnofficialMultiplayerAPI_MPApi_FieldWatchPrefix" data-uid="UnofficialMultiplayerAPI.MPApi.FieldWatchPrefix">FieldWatchPrefix()</h4>
+  <div class="markdown level1 summary"><p>Starts a new synchronization stack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FieldWatchPrefix()</code></pre>
+  </div>
+  <h5 id="UnofficialMultiplayerAPI_MPApi_FieldWatchPrefix_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Has to be called before invoking Watch methods.</p>
+<p>See also <a class="xref" href="UnofficialMultiplayerAPI.ISyncField.html#UnofficialMultiplayerAPI_ISyncField_Watch_System_Object_System_Object_">Watch(Object, Object)</a>.</p>
+</div>
+  
+  
+  <a id="UnofficialMultiplayerAPI_MPApi_RegisterSyncMethod_" data-uid="UnofficialMultiplayerAPI.MPApi.RegisterSyncMethod*"></a>
+  <h4 id="UnofficialMultiplayerAPI_MPApi_RegisterSyncMethod_System_Reflection_MethodInfo_UnofficialMultiplayerAPI_SyncType___" data-uid="UnofficialMultiplayerAPI.MPApi.RegisterSyncMethod(System.Reflection.MethodInfo,UnofficialMultiplayerAPI.SyncType[])">RegisterSyncMethod(MethodInfo, SyncType[])</h4>
+  <div class="markdown level1 summary"><p>Registers a method for syncing and returns its <a class="xref" href="UnofficialMultiplayerAPI.ISyncMethod.html">ISyncMethod</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ISyncMethod RegisterSyncMethod(MethodInfo method, SyncType[] argTypes = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.reflection.methodinfo">MethodInfo</a></td>
+        <td><span class="parametername">method</span></td>
+        <td><p>MethodInfo of a method to register</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnofficialMultiplayerAPI.SyncType</span>[]</td>
+        <td><span class="parametername">argTypes</span></td>
+        <td><p>Method&apos;s parameter types</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnofficialMultiplayerAPI.ISyncMethod.html">ISyncMethod</a></td>
+        <td><p>A new registered <a class="xref" href="UnofficialMultiplayerAPI.ISyncMethod.html">ISyncMethod</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnofficialMultiplayerAPI_MPApi_RegisterSyncMethod_System_Reflection_MethodInfo_UnofficialMultiplayerAPI_SyncType____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Has to be called inside of <a class="xref" href="UnofficialMultiplayerAPI.IMultiplayerInit.html">IMultiplayerInit</a>.<a class="xref" href="UnofficialMultiplayerAPI.IMultiplayerInit.html#UnofficialMultiplayerAPI_IMultiplayerInit_Init">Init()</a>.</p>
+<p>It&apos;s recommended to use <a class="xref" href="UnofficialMultiplayerAPI.SyncMethodAttribute.html">SyncMethodAttribute</a> instead, unless you have to otherwise.</p>
+</div>
+  <h5 id="UnofficialMultiplayerAPI_MPApi_RegisterSyncMethod_System_Reflection_MethodInfo_UnofficialMultiplayerAPI_SyncType____examples">Examples</h5>
+  <p>Register a method for syncing using reflection and set it to debug only.</p>
+<pre><code>RegisterSyncMethod(typeof(MyType).GetMethod(nameof(MyType.MyMethod))).SetDebugOnly();</code></pre>
+
+  
+  
+  <a id="UnofficialMultiplayerAPI_MPApi_RegisterSyncMethod_" data-uid="UnofficialMultiplayerAPI.MPApi.RegisterSyncMethod*"></a>
+  <h4 id="UnofficialMultiplayerAPI_MPApi_RegisterSyncMethod_System_Type_System_String_UnofficialMultiplayerAPI_SyncType___" data-uid="UnofficialMultiplayerAPI.MPApi.RegisterSyncMethod(System.Type,System.String,UnofficialMultiplayerAPI.SyncType[])">RegisterSyncMethod(Type, String, SyncType[])</h4>
+  <div class="markdown level1 summary"><p>Registers a method for syncing and returns its <a class="xref" href="UnofficialMultiplayerAPI.ISyncMethod.html">ISyncMethod</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ISyncMethod RegisterSyncMethod(Type type, string methodOrPropertyName, SyncType[] argTypes = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>Type that contains the method</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">methodOrPropertyName</span></td>
+        <td><p>Name of the method</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnofficialMultiplayerAPI.SyncType</span>[]</td>
+        <td><span class="parametername">argTypes</span></td>
+        <td><p>Method&apos;s parameter types</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnofficialMultiplayerAPI.ISyncMethod.html">ISyncMethod</a></td>
+        <td><p>A new registered <a class="xref" href="UnofficialMultiplayerAPI.ISyncMethod.html">ISyncMethod</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnofficialMultiplayerAPI_MPApi_RegisterSyncMethod_System_Type_System_String_UnofficialMultiplayerAPI_SyncType____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Has to be called inside of <a class="xref" href="UnofficialMultiplayerAPI.IMultiplayerInit.html">IMultiplayerInit</a>.<a class="xref" href="UnofficialMultiplayerAPI.IMultiplayerInit.html#UnofficialMultiplayerAPI_IMultiplayerInit_Init">Init()</a>.</p>
+<p>It&apos;s recommended to use <a class="xref" href="UnofficialMultiplayerAPI.SyncMethodAttribute.html">SyncMethodAttribute</a> instead, unless you have to otherwise.</p>
+</div>
+  
+  
+  <a id="UnofficialMultiplayerAPI_MPApi_SyncField_" data-uid="UnofficialMultiplayerAPI.MPApi.SyncField*"></a>
+  <h4 id="UnofficialMultiplayerAPI_MPApi_SyncField_System_Type_System_String_" data-uid="UnofficialMultiplayerAPI.MPApi.SyncField(System.Type,System.String)">SyncField(Type, String)</h4>
+  <div class="markdown level1 summary"><p>Registers a field for syncing and returns it&apos;s <a class="xref" href="UnofficialMultiplayerAPI.ISyncField.html">ISyncField</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ISyncField SyncField(Type targetType, string memberPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.type">Type</a></td>
+        <td><span class="parametername">targetType</span></td>
+        <td><p>Type of the target class that contains the specified member</p>
+<p>if null, <code data-dev-comment-type="paramref" class="paramref">memberPath</code> will point at field from the global namespace</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">memberPath</span></td>
+        <td><p>Path to a member. If the member is to be indexed, it has to end with /[] eg. <code>&quot;myArray/[]&quot;</code></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnofficialMultiplayerAPI.ISyncField.html">ISyncField</a></td>
+        <td><p>A new registered <a class="xref" href="UnofficialMultiplayerAPI.ISyncField.html">ISyncField</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnofficialMultiplayerAPI_MPApi_SyncField_System_Type_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Has to be called inside of <a class="xref" href="UnofficialMultiplayerAPI.IMultiplayerInit.html">IMultiplayerInit</a>.<a class="xref" href="UnofficialMultiplayerAPI.IMultiplayerInit.html#UnofficialMultiplayerAPI_IMultiplayerInit_Init">Init()</a>.</p>
+</div>
+  
+  
+  <a id="UnofficialMultiplayerAPI_MPApi_Watch_" data-uid="UnofficialMultiplayerAPI.MPApi.Watch*"></a>
+  <h4 id="UnofficialMultiplayerAPI_MPApi_Watch_UnofficialMultiplayerAPI_ISyncField_System_Object_System_Object_" data-uid="UnofficialMultiplayerAPI.MPApi.Watch(UnofficialMultiplayerAPI.ISyncField,System.Object,System.Object)">Watch(ISyncField, Object, Object)</h4>
+  <div class="markdown level1 summary"><p>An alias for <a class="xref" href="UnofficialMultiplayerAPI.ISyncField.html#UnofficialMultiplayerAPI_ISyncField_Watch_System_Object_System_Object_">Watch(Object, Object)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Watch(ISyncField field, object target = null, object index = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnofficialMultiplayerAPI.ISyncField.html">ISyncField</a></td>
+        <td><span class="parametername">field</span></td>
+        <td><p><a class="xref" href="UnofficialMultiplayerAPI.ISyncField.html">ISyncField</a> object to watch</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">target</span></td>
+        <td><p>An object of type set in the <a class="xref" href="UnofficialMultiplayerAPI.ISyncField.html">ISyncField</a>. Set to null if you&apos;re watching a static field.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>Index in the field path set in <a class="xref" href="UnofficialMultiplayerAPI.ISyncField.html">ISyncField</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

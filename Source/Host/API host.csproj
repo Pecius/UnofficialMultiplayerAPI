@@ -40,6 +40,16 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <Optimize>true</Optimize>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Docs|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Docs\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;HOST</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="0Harmony">
       <HintPath>..\..\..\Multiplayer\Assemblies\0Harmony.dll</HintPath>
@@ -76,9 +86,12 @@
     <Compile Include="..\Utils.cs">
       <Link>Utils.cs</Link>
     </Compile>
+    <Compile Include="DynDelegate.cs" />
+    <Compile Include="Patches.cs" />
     <Compile Include="Proxies.cs" />
     <Compile Include="ApiHost.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Syncers.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

@@ -204,10 +204,14 @@ namespace UnofficialMultiplayerAPIHost
 
 		public class IFSync : IAPI
 		{
+			internal static Dictionary<Assembly, SyncerDictionary> syncers = new Dictionary<Assembly, SyncerDictionary>();
+
 			public bool IsHosting => Multiplayer.Common.MultiplayerServer.instance != null;//MPC.Multiplayer.LocalServer != null;
 			public bool IsInMultiplayer => MPC.Multiplayer.session != null;
 
 			public string PlayerName => MPC.Multiplayer.username;
+
+			//public SyncerDictionary Syncers => syncers[Assembly.GetCallingAssembly()];
 
 			public void FieldWatchPostfix()
 			{

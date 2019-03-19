@@ -1,0 +1,76 @@
+{
+	"metadata": [
+		{
+			"src": [
+				{
+					"files": [
+						"*.csproj"
+					],
+					"src": "../Client",
+					"exclude": [
+						"**/obj/**",
+						"**/bin/**"
+					]
+				}
+			],
+			"dest": "obj/api",
+			"filter": "filter.yml",
+			"disableGitFeatures": true
+		}
+	],
+	"build": {
+		"content": [
+			{
+				"files": [
+					"api/**.yml"
+				],
+				"cwd": "obj"
+			},
+			{
+				"files": [
+					"api/*.md",
+					"articles/**.md",
+					"toc.yml",
+					"*.md"
+				],
+				"exclude": [
+					"obj/**"
+				]
+			}
+		],
+		"resource": [
+			{
+				"files": [
+					"images/**",
+					"*.png"
+				],
+				"exclude": [
+					"obj/**"
+				]
+			}
+		],
+		"overwrite": [
+			{
+				"files": [
+					"apidoc/**.md"
+				],
+				"exclude": [
+					"obj/**",
+					"_site/**"
+				]
+			}
+		],
+		"dest": "../../Docs",
+		"template": [
+			"statictoc"
+		],
+		"globalMetadata": {
+			"_appLogoPath": "logo.png",
+			"_appFaviconPath": "favicon.png",
+			"_enableSearch": true
+		},
+
+		"disableGitFeatures": true,
+		"xrefService": [ "https://xref.docs.microsoft.com/query?uid={uid}" ]
+		}
+	}

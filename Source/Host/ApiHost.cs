@@ -8,6 +8,8 @@ using Multiplayer.Client;
 using Log = UnofficialMultiplayerAPI_UTILS.Log;
 using System.Diagnostics;
 using System.IO;
+using ClientAPI = UnofficialMultiplayerAPI;
+using DynDelegate;
 
 namespace UnofficialMultiplayerAPIHost
 {
@@ -17,6 +19,7 @@ namespace UnofficialMultiplayerAPIHost
 		static LateInit()
 		{
 			CheckInterfaceVersions();
+			Patches.Harmony.DoPatches();
 			RegisterAllMethods();
 			Sync.InitHandlers();
 		}
@@ -33,12 +36,11 @@ namespace UnofficialMultiplayerAPIHost
 			IEnumerable<Type> allTypes = allActive.SelectMany(a => a.GetTypes());
 
 			IEnumerable<MethodInfo> allMethods = allTypes
-				.SelectMany(t => t.GetMethods(BindingFlags.DeclaredOnly | BindingFlags.Instance | BindingFlags.Static | BindingFlags.NonPublic | BindingFlags.Public))
-				.Where(m => m.HasAttribute<UnofficialMultiplayerAPI.SyncMethodAttribute>());
+				.SelectMany(t => t.GetMethods(BindingFlags.DeclaredOnly | BindingFlags.Instance | BindingFlags.Static | BindingFlags.NonPublic | BindingFlags.Public));
 
-			foreach(MethodInfo method in allMethods)
+			foreach(MethodInfo method in allMethods.Where(m => m.HasAttribute<ClientAPI.SyncMethodAttribute>()))
 			{
-				var attribute = method.TryGetAttribute<UnofficialMultiplayerAPI.SyncMethodAttribute>();
+				var attribute = method.TryGetAttribute<ClientAPI.SyncMethodAttribute>();
 
 				Log.Debug($"Installing {method.DeclaringType.FullName}::{method}");
 				int[] exposeParameters = attribute.exposeParameters;
@@ -71,6 +73,9 @@ namespace UnofficialMultiplayerAPIHost
 				if (attribute.cancelIfNoSelectedWorldObjects)
 					sm.CancelIfNoSelectedWorldObjects();
 
+				if (attribute.setDebugOnly)
+					sm.SetDebugOnly();
+
 				if(exposeParameters != null)
 				{
 					int i = 0;
@@ -90,14 +95,14 @@ namespace UnofficialMultiplayerAPIHost
 				}
 			}
 
-			var initializers = allTypes.Where(t => !t.IsInterface && typeof(UnofficialMultiplayerAPI.IMultiplayerInit).IsAssignableFrom(t));
+			var initializers = allTypes.Where(t => !t.IsInterface && typeof(ClientAPI.IMultiplayerInit).IsAssignableFrom(t));
 
 			foreach(Type t in initializers)
 			{
 				try
 				{
 					Log.Debug($"Calling Init for {t}");
-					var @if = (UnofficialMultiplayerAPI.IMultiplayerInit)Activator.CreateInstance(t);
+					var @if = (ClientAPI.IMultiplayerInit)Activator.CreateInstance(t);
 
 					@if.Init();
 				}
@@ -105,6 +110,52 @@ namespace UnofficialMultiplayerAPIHost
 				{
 					Log.Error($"An exception occurred while calling IMultiplayerInit.Init in {t.Assembly.GetName().Name}.dll\n{exc}", true);
 				}
+			}
+
+			foreach(MethodInfo method in allMethods.Where(m => m.HasAttribute<ClientAPI.SyncerAttribute>()))
+			{
+				Type[] parameters = method.GetParameters().Select(p => p.ParameterType).ToArray();
+
+				if (!method.IsStatic)
+				{
+					Log.Error($"Error in {method.DeclaringType.FullName}::{method}: Syncer method has to be static.");
+					continue;
+				}
+
+				if (parameters.Length != 2)
+				{
+					Log.Error($"Error in {method.DeclaringType.FullName}::{method}: Syncer method has an invalid number of parameters.");
+					continue;
+				}
+
+				if(parameters[0] != typeof(ClientAPI.SyncWorker))
+				{
+					Log.Error($"Error in {method.DeclaringType.FullName}::{method}: Syncer method has an invalid first parameter (got {parameters[0]}, expected ISyncWorker).");
+					continue;
+				}
+
+				if (!parameters[1].IsByRef)
+				{
+					Log.Error($"Error in {method.DeclaringType.FullName}::{method}: Syncer method has an invalid second parameter, should be a ref.");
+					continue;
+				}
+
+				Type type = parameters[1].GetElementType();
+
+				if (!Proxies.IFSync.syncers.TryGetValue(method.DeclaringType.Assembly, out SyncerDictionary dict))
+				{
+					dict = new SyncerDictionary();
+					Proxies.IFSync.syncers.Add(method.DeclaringType.Assembly, dict);
+				}
+
+				var attribute = method.TryGetAttribute<ClientAPI.SyncerAttribute>();
+
+				Log.Debug($"Registered a syncer {method.DeclaringType.FullName}::{method} for type {type} in assembly {method.DeclaringType.Assembly.GetName().Name}");
+
+				if (dict.TryGetValue(type, out var syncer))
+					Log.Warning($"Warning, a syncer for type {type} is already registered!");
+
+				dict.Add(type, DynamicDelegate.Create<SyncerEntry.syncerDelegateRef>(method), attribute.isImplicit, attribute.shouldConstruct);
 			}
 		}
 

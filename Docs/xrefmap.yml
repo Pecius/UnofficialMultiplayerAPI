@@ -1,0 +1,715 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: UnofficialMultiplayerAPI
+  name: UnofficialMultiplayerAPI
+  href: api/UnofficialMultiplayerAPI.html
+  commentId: N:UnofficialMultiplayerAPI
+  fullName: UnofficialMultiplayerAPI
+  nameWithType: UnofficialMultiplayerAPI
+- uid: UnofficialMultiplayerAPI.IMultiplayerInit
+  name: IMultiplayerInit
+  href: api/UnofficialMultiplayerAPI.IMultiplayerInit.html
+  commentId: T:UnofficialMultiplayerAPI.IMultiplayerInit
+  fullName: UnofficialMultiplayerAPI.IMultiplayerInit
+  nameWithType: IMultiplayerInit
+- uid: UnofficialMultiplayerAPI.IMultiplayerInit.Init
+  name: Init()
+  href: api/UnofficialMultiplayerAPI.IMultiplayerInit.html#UnofficialMultiplayerAPI_IMultiplayerInit_Init
+  commentId: M:UnofficialMultiplayerAPI.IMultiplayerInit.Init
+  fullName: UnofficialMultiplayerAPI.IMultiplayerInit.Init()
+  nameWithType: IMultiplayerInit.Init()
+- uid: UnofficialMultiplayerAPI.IMultiplayerInit.Init*
+  name: Init
+  href: api/UnofficialMultiplayerAPI.IMultiplayerInit.html#UnofficialMultiplayerAPI_IMultiplayerInit_Init_
+  commentId: Overload:UnofficialMultiplayerAPI.IMultiplayerInit.Init
+  isSpec: "True"
+  fullName: UnofficialMultiplayerAPI.IMultiplayerInit.Init
+  nameWithType: IMultiplayerInit.Init
+- uid: UnofficialMultiplayerAPI.ISyncable
+  name: ISyncable
+  href: api/UnofficialMultiplayerAPI.ISyncable.html
+  commentId: T:UnofficialMultiplayerAPI.ISyncable
+  fullName: UnofficialMultiplayerAPI.ISyncable
+  nameWithType: ISyncable
+- uid: UnofficialMultiplayerAPI.ISyncable.Sync(UnofficialMultiplayerAPI.SyncWorker)
+  name: Sync(SyncWorker)
+  href: api/UnofficialMultiplayerAPI.ISyncable.html#UnofficialMultiplayerAPI_ISyncable_Sync_UnofficialMultiplayerAPI_SyncWorker_
+  commentId: M:UnofficialMultiplayerAPI.ISyncable.Sync(UnofficialMultiplayerAPI.SyncWorker)
+  fullName: UnofficialMultiplayerAPI.ISyncable.Sync(UnofficialMultiplayerAPI.SyncWorker)
+  nameWithType: ISyncable.Sync(SyncWorker)
+- uid: UnofficialMultiplayerAPI.ISyncable.Sync*
+  name: Sync
+  href: api/UnofficialMultiplayerAPI.ISyncable.html#UnofficialMultiplayerAPI_ISyncable_Sync_
+  commentId: Overload:UnofficialMultiplayerAPI.ISyncable.Sync
+  isSpec: "True"
+  fullName: UnofficialMultiplayerAPI.ISyncable.Sync
+  nameWithType: ISyncable.Sync
+- uid: UnofficialMultiplayerAPI.ISyncField
+  name: ISyncField
+  href: api/UnofficialMultiplayerAPI.ISyncField.html
+  commentId: T:UnofficialMultiplayerAPI.ISyncField
+  fullName: UnofficialMultiplayerAPI.ISyncField
+  nameWithType: ISyncField
+- uid: UnofficialMultiplayerAPI.ISyncField.CancelIfValueNull
+  name: CancelIfValueNull()
+  href: api/UnofficialMultiplayerAPI.ISyncField.html#UnofficialMultiplayerAPI_ISyncField_CancelIfValueNull
+  commentId: M:UnofficialMultiplayerAPI.ISyncField.CancelIfValueNull
+  fullName: UnofficialMultiplayerAPI.ISyncField.CancelIfValueNull()
+  nameWithType: ISyncField.CancelIfValueNull()
+- uid: UnofficialMultiplayerAPI.ISyncField.CancelIfValueNull*
+  name: CancelIfValueNull
+  href: api/UnofficialMultiplayerAPI.ISyncField.html#UnofficialMultiplayerAPI_ISyncField_CancelIfValueNull_
+  commentId: Overload:UnofficialMultiplayerAPI.ISyncField.CancelIfValueNull
+  isSpec: "True"
+  fullName: UnofficialMultiplayerAPI.ISyncField.CancelIfValueNull
+  nameWithType: ISyncField.CancelIfValueNull
+- uid: UnofficialMultiplayerAPI.ISyncField.InGameLoop
+  name: InGameLoop()
+  href: api/UnofficialMultiplayerAPI.ISyncField.html#UnofficialMultiplayerAPI_ISyncField_InGameLoop
+  commentId: M:UnofficialMultiplayerAPI.ISyncField.InGameLoop
+  fullName: UnofficialMultiplayerAPI.ISyncField.InGameLoop()
+  nameWithType: ISyncField.InGameLoop()
+- uid: UnofficialMultiplayerAPI.ISyncField.InGameLoop*
+  name: InGameLoop
+  href: api/UnofficialMultiplayerAPI.ISyncField.html#UnofficialMultiplayerAPI_ISyncField_InGameLoop_
+  commentId: Overload:UnofficialMultiplayerAPI.ISyncField.InGameLoop
+  isSpec: "True"
+  fullName: UnofficialMultiplayerAPI.ISyncField.InGameLoop
+  nameWithType: ISyncField.InGameLoop
+- uid: UnofficialMultiplayerAPI.ISyncField.PostApply(System.Action{System.Object,System.Object})
+  name: PostApply(Action<Object, Object>)
+  href: api/UnofficialMultiplayerAPI.ISyncField.html#UnofficialMultiplayerAPI_ISyncField_PostApply_System_Action_System_Object_System_Object__
+  commentId: M:UnofficialMultiplayerAPI.ISyncField.PostApply(System.Action{System.Object,System.Object})
+  name.vb: PostApply(Action(Of Object, Object))
+  fullName: UnofficialMultiplayerAPI.ISyncField.PostApply(System.Action<System.Object, System.Object>)
+  fullName.vb: UnofficialMultiplayerAPI.ISyncField.PostApply(System.Action(Of System.Object, System.Object))
+  nameWithType: ISyncField.PostApply(Action<Object, Object>)
+  nameWithType.vb: ISyncField.PostApply(Action(Of Object, Object))
+- uid: UnofficialMultiplayerAPI.ISyncField.PostApply*
+  name: PostApply
+  href: api/UnofficialMultiplayerAPI.ISyncField.html#UnofficialMultiplayerAPI_ISyncField_PostApply_
+  commentId: Overload:UnofficialMultiplayerAPI.ISyncField.PostApply
+  isSpec: "True"
+  fullName: UnofficialMultiplayerAPI.ISyncField.PostApply
+  nameWithType: ISyncField.PostApply
+- uid: UnofficialMultiplayerAPI.ISyncField.PreApply(System.Action{System.Object,System.Object})
+  name: PreApply(Action<Object, Object>)
+  href: api/UnofficialMultiplayerAPI.ISyncField.html#UnofficialMultiplayerAPI_ISyncField_PreApply_System_Action_System_Object_System_Object__
+  commentId: M:UnofficialMultiplayerAPI.ISyncField.PreApply(System.Action{System.Object,System.Object})
+  name.vb: PreApply(Action(Of Object, Object))
+  fullName: UnofficialMultiplayerAPI.ISyncField.PreApply(System.Action<System.Object, System.Object>)
+  fullName.vb: UnofficialMultiplayerAPI.ISyncField.PreApply(System.Action(Of System.Object, System.Object))
+  nameWithType: ISyncField.PreApply(Action<Object, Object>)
+  nameWithType.vb: ISyncField.PreApply(Action(Of Object, Object))
+- uid: UnofficialMultiplayerAPI.ISyncField.PreApply*
+  name: PreApply
+  href: api/UnofficialMultiplayerAPI.ISyncField.html#UnofficialMultiplayerAPI_ISyncField_PreApply_
+  commentId: Overload:UnofficialMultiplayerAPI.ISyncField.PreApply
+  isSpec: "True"
+  fullName: UnofficialMultiplayerAPI.ISyncField.PreApply
+  nameWithType: ISyncField.PreApply
+- uid: UnofficialMultiplayerAPI.ISyncField.SetBufferChanges
+  name: SetBufferChanges()
+  href: api/UnofficialMultiplayerAPI.ISyncField.html#UnofficialMultiplayerAPI_ISyncField_SetBufferChanges
+  commentId: M:UnofficialMultiplayerAPI.ISyncField.SetBufferChanges
+  fullName: UnofficialMultiplayerAPI.ISyncField.SetBufferChanges()
+  nameWithType: ISyncField.SetBufferChanges()
+- uid: UnofficialMultiplayerAPI.ISyncField.SetBufferChanges*
+  name: SetBufferChanges
+  href: api/UnofficialMultiplayerAPI.ISyncField.html#UnofficialMultiplayerAPI_ISyncField_SetBufferChanges_
+  commentId: Overload:UnofficialMultiplayerAPI.ISyncField.SetBufferChanges
+  isSpec: "True"
+  fullName: UnofficialMultiplayerAPI.ISyncField.SetBufferChanges
+  nameWithType: ISyncField.SetBufferChanges
+- uid: UnofficialMultiplayerAPI.ISyncField.SetDebugOnly
+  name: SetDebugOnly()
+  href: api/UnofficialMultiplayerAPI.ISyncField.html#UnofficialMultiplayerAPI_ISyncField_SetDebugOnly
+  commentId: M:UnofficialMultiplayerAPI.ISyncField.SetDebugOnly
+  fullName: UnofficialMultiplayerAPI.ISyncField.SetDebugOnly()
+  nameWithType: ISyncField.SetDebugOnly()
+- uid: UnofficialMultiplayerAPI.ISyncField.SetDebugOnly*
+  name: SetDebugOnly
+  href: api/UnofficialMultiplayerAPI.ISyncField.html#UnofficialMultiplayerAPI_ISyncField_SetDebugOnly_
+  commentId: Overload:UnofficialMultiplayerAPI.ISyncField.SetDebugOnly
+  isSpec: "True"
+  fullName: UnofficialMultiplayerAPI.ISyncField.SetDebugOnly
+  nameWithType: ISyncField.SetDebugOnly
+- uid: UnofficialMultiplayerAPI.ISyncField.SetHostOnly
+  name: SetHostOnly()
+  href: api/UnofficialMultiplayerAPI.ISyncField.html#UnofficialMultiplayerAPI_ISyncField_SetHostOnly
+  commentId: M:UnofficialMultiplayerAPI.ISyncField.SetHostOnly
+  fullName: UnofficialMultiplayerAPI.ISyncField.SetHostOnly()
+  nameWithType: ISyncField.SetHostOnly()
+- uid: UnofficialMultiplayerAPI.ISyncField.SetHostOnly*
+  name: SetHostOnly
+  href: api/UnofficialMultiplayerAPI.ISyncField.html#UnofficialMultiplayerAPI_ISyncField_SetHostOnly_
+  commentId: Overload:UnofficialMultiplayerAPI.ISyncField.SetHostOnly
+  isSpec: "True"
+  fullName: UnofficialMultiplayerAPI.ISyncField.SetHostOnly
+  nameWithType: ISyncField.SetHostOnly
+- uid: UnofficialMultiplayerAPI.ISyncField.SetVersion(System.Int32)
+  name: SetVersion(Int32)
+  href: api/UnofficialMultiplayerAPI.ISyncField.html#UnofficialMultiplayerAPI_ISyncField_SetVersion_System_Int32_
+  commentId: M:UnofficialMultiplayerAPI.ISyncField.SetVersion(System.Int32)
+  fullName: UnofficialMultiplayerAPI.ISyncField.SetVersion(System.Int32)
+  nameWithType: ISyncField.SetVersion(Int32)
+- uid: UnofficialMultiplayerAPI.ISyncField.SetVersion*
+  name: SetVersion
+  href: api/UnofficialMultiplayerAPI.ISyncField.html#UnofficialMultiplayerAPI_ISyncField_SetVersion_
+  commentId: Overload:UnofficialMultiplayerAPI.ISyncField.SetVersion
+  isSpec: "True"
+  fullName: UnofficialMultiplayerAPI.ISyncField.SetVersion
+  nameWithType: ISyncField.SetVersion
+- uid: UnofficialMultiplayerAPI.ISyncField.Watch(System.Object,System.Object)
+  name: Watch(Object, Object)
+  href: api/UnofficialMultiplayerAPI.ISyncField.html#UnofficialMultiplayerAPI_ISyncField_Watch_System_Object_System_Object_
+  commentId: M:UnofficialMultiplayerAPI.ISyncField.Watch(System.Object,System.Object)
+  fullName: UnofficialMultiplayerAPI.ISyncField.Watch(System.Object, System.Object)
+  nameWithType: ISyncField.Watch(Object, Object)
+- uid: UnofficialMultiplayerAPI.ISyncField.Watch*
+  name: Watch
+  href: api/UnofficialMultiplayerAPI.ISyncField.html#UnofficialMultiplayerAPI_ISyncField_Watch_
+  commentId: Overload:UnofficialMultiplayerAPI.ISyncField.Watch
+  isSpec: "True"
+  fullName: UnofficialMultiplayerAPI.ISyncField.Watch
+  nameWithType: ISyncField.Watch
+- uid: UnofficialMultiplayerAPI.ISyncMethod
+  name: ISyncMethod
+  href: api/UnofficialMultiplayerAPI.ISyncMethod.html
+  commentId: T:UnofficialMultiplayerAPI.ISyncMethod
+  fullName: UnofficialMultiplayerAPI.ISyncMethod
+  nameWithType: ISyncMethod
+- uid: UnofficialMultiplayerAPI.ISyncMethod.CancelIfAnyArgNull
+  name: CancelIfAnyArgNull()
+  href: api/UnofficialMultiplayerAPI.ISyncMethod.html#UnofficialMultiplayerAPI_ISyncMethod_CancelIfAnyArgNull
+  commentId: M:UnofficialMultiplayerAPI.ISyncMethod.CancelIfAnyArgNull
+  fullName: UnofficialMultiplayerAPI.ISyncMethod.CancelIfAnyArgNull()
+  nameWithType: ISyncMethod.CancelIfAnyArgNull()
+- uid: UnofficialMultiplayerAPI.ISyncMethod.CancelIfAnyArgNull*
+  name: CancelIfAnyArgNull
+  href: api/UnofficialMultiplayerAPI.ISyncMethod.html#UnofficialMultiplayerAPI_ISyncMethod_CancelIfAnyArgNull_
+  commentId: Overload:UnofficialMultiplayerAPI.ISyncMethod.CancelIfAnyArgNull
+  isSpec: "True"
+  fullName: UnofficialMultiplayerAPI.ISyncMethod.CancelIfAnyArgNull
+  nameWithType: ISyncMethod.CancelIfAnyArgNull
+- uid: UnofficialMultiplayerAPI.ISyncMethod.CancelIfNoSelectedMapObjects
+  name: CancelIfNoSelectedMapObjects()
+  href: api/UnofficialMultiplayerAPI.ISyncMethod.html#UnofficialMultiplayerAPI_ISyncMethod_CancelIfNoSelectedMapObjects
+  commentId: M:UnofficialMultiplayerAPI.ISyncMethod.CancelIfNoSelectedMapObjects
+  fullName: UnofficialMultiplayerAPI.ISyncMethod.CancelIfNoSelectedMapObjects()
+  nameWithType: ISyncMethod.CancelIfNoSelectedMapObjects()
+- uid: UnofficialMultiplayerAPI.ISyncMethod.CancelIfNoSelectedMapObjects*
+  name: CancelIfNoSelectedMapObjects
+  href: api/UnofficialMultiplayerAPI.ISyncMethod.html#UnofficialMultiplayerAPI_ISyncMethod_CancelIfNoSelectedMapObjects_
+  commentId: Overload:UnofficialMultiplayerAPI.ISyncMethod.CancelIfNoSelectedMapObjects
+  isSpec: "True"
+  fullName: UnofficialMultiplayerAPI.ISyncMethod.CancelIfNoSelectedMapObjects
+  nameWithType: ISyncMethod.CancelIfNoSelectedMapObjects
+- uid: UnofficialMultiplayerAPI.ISyncMethod.CancelIfNoSelectedWorldObjects
+  name: CancelIfNoSelectedWorldObjects()
+  href: api/UnofficialMultiplayerAPI.ISyncMethod.html#UnofficialMultiplayerAPI_ISyncMethod_CancelIfNoSelectedWorldObjects
+  commentId: M:UnofficialMultiplayerAPI.ISyncMethod.CancelIfNoSelectedWorldObjects
+  fullName: UnofficialMultiplayerAPI.ISyncMethod.CancelIfNoSelectedWorldObjects()
+  nameWithType: ISyncMethod.CancelIfNoSelectedWorldObjects()
+- uid: UnofficialMultiplayerAPI.ISyncMethod.CancelIfNoSelectedWorldObjects*
+  name: CancelIfNoSelectedWorldObjects
+  href: api/UnofficialMultiplayerAPI.ISyncMethod.html#UnofficialMultiplayerAPI_ISyncMethod_CancelIfNoSelectedWorldObjects_
+  commentId: Overload:UnofficialMultiplayerAPI.ISyncMethod.CancelIfNoSelectedWorldObjects
+  isSpec: "True"
+  fullName: UnofficialMultiplayerAPI.ISyncMethod.CancelIfNoSelectedWorldObjects
+  nameWithType: ISyncMethod.CancelIfNoSelectedWorldObjects
+- uid: UnofficialMultiplayerAPI.ISyncMethod.ExposeParameter(System.Int32)
+  name: ExposeParameter(Int32)
+  href: api/UnofficialMultiplayerAPI.ISyncMethod.html#UnofficialMultiplayerAPI_ISyncMethod_ExposeParameter_System_Int32_
+  commentId: M:UnofficialMultiplayerAPI.ISyncMethod.ExposeParameter(System.Int32)
+  fullName: UnofficialMultiplayerAPI.ISyncMethod.ExposeParameter(System.Int32)
+  nameWithType: ISyncMethod.ExposeParameter(Int32)
+- uid: UnofficialMultiplayerAPI.ISyncMethod.ExposeParameter*
+  name: ExposeParameter
+  href: api/UnofficialMultiplayerAPI.ISyncMethod.html#UnofficialMultiplayerAPI_ISyncMethod_ExposeParameter_
+  commentId: Overload:UnofficialMultiplayerAPI.ISyncMethod.ExposeParameter
+  isSpec: "True"
+  fullName: UnofficialMultiplayerAPI.ISyncMethod.ExposeParameter
+  nameWithType: ISyncMethod.ExposeParameter
+- uid: UnofficialMultiplayerAPI.ISyncMethod.MinTime(System.Int32)
+  name: MinTime(Int32)
+  href: api/UnofficialMultiplayerAPI.ISyncMethod.html#UnofficialMultiplayerAPI_ISyncMethod_MinTime_System_Int32_
+  commentId: M:UnofficialMultiplayerAPI.ISyncMethod.MinTime(System.Int32)
+  fullName: UnofficialMultiplayerAPI.ISyncMethod.MinTime(System.Int32)
+  nameWithType: ISyncMethod.MinTime(Int32)
+- uid: UnofficialMultiplayerAPI.ISyncMethod.MinTime*
+  name: MinTime
+  href: api/UnofficialMultiplayerAPI.ISyncMethod.html#UnofficialMultiplayerAPI_ISyncMethod_MinTime_
+  commentId: Overload:UnofficialMultiplayerAPI.ISyncMethod.MinTime
+  isSpec: "True"
+  fullName: UnofficialMultiplayerAPI.ISyncMethod.MinTime
+  nameWithType: ISyncMethod.MinTime
+- uid: UnofficialMultiplayerAPI.ISyncMethod.SetContext(UnofficialMultiplayerAPI.SyncContext)
+  name: SetContext(SyncContext)
+  href: api/UnofficialMultiplayerAPI.ISyncMethod.html#UnofficialMultiplayerAPI_ISyncMethod_SetContext_UnofficialMultiplayerAPI_SyncContext_
+  commentId: M:UnofficialMultiplayerAPI.ISyncMethod.SetContext(UnofficialMultiplayerAPI.SyncContext)
+  fullName: UnofficialMultiplayerAPI.ISyncMethod.SetContext(UnofficialMultiplayerAPI.SyncContext)
+  nameWithType: ISyncMethod.SetContext(SyncContext)
+- uid: UnofficialMultiplayerAPI.ISyncMethod.SetContext*
+  name: SetContext
+  href: api/UnofficialMultiplayerAPI.ISyncMethod.html#UnofficialMultiplayerAPI_ISyncMethod_SetContext_
+  commentId: Overload:UnofficialMultiplayerAPI.ISyncMethod.SetContext
+  isSpec: "True"
+  fullName: UnofficialMultiplayerAPI.ISyncMethod.SetContext
+  nameWithType: ISyncMethod.SetContext
+- uid: UnofficialMultiplayerAPI.ISyncMethod.SetDebugOnly
+  name: SetDebugOnly()
+  href: api/UnofficialMultiplayerAPI.ISyncMethod.html#UnofficialMultiplayerAPI_ISyncMethod_SetDebugOnly
+  commentId: M:UnofficialMultiplayerAPI.ISyncMethod.SetDebugOnly
+  fullName: UnofficialMultiplayerAPI.ISyncMethod.SetDebugOnly()
+  nameWithType: ISyncMethod.SetDebugOnly()
+- uid: UnofficialMultiplayerAPI.ISyncMethod.SetDebugOnly*
+  name: SetDebugOnly
+  href: api/UnofficialMultiplayerAPI.ISyncMethod.html#UnofficialMultiplayerAPI_ISyncMethod_SetDebugOnly_
+  commentId: Overload:UnofficialMultiplayerAPI.ISyncMethod.SetDebugOnly
+  isSpec: "True"
+  fullName: UnofficialMultiplayerAPI.ISyncMethod.SetDebugOnly
+  nameWithType: ISyncMethod.SetDebugOnly
+- uid: UnofficialMultiplayerAPI.ISyncMethod.SetPreInvoke(System.Action{System.Object,System.Object[]})
+  name: SetPreInvoke(Action<Object, Object[]>)
+  href: api/UnofficialMultiplayerAPI.ISyncMethod.html#UnofficialMultiplayerAPI_ISyncMethod_SetPreInvoke_System_Action_System_Object_System_Object____
+  commentId: M:UnofficialMultiplayerAPI.ISyncMethod.SetPreInvoke(System.Action{System.Object,System.Object[]})
+  name.vb: SetPreInvoke(Action(Of Object, Object()))
+  fullName: UnofficialMultiplayerAPI.ISyncMethod.SetPreInvoke(System.Action<System.Object, System.Object[]>)
+  fullName.vb: UnofficialMultiplayerAPI.ISyncMethod.SetPreInvoke(System.Action(Of System.Object, System.Object()))
+  nameWithType: ISyncMethod.SetPreInvoke(Action<Object, Object[]>)
+  nameWithType.vb: ISyncMethod.SetPreInvoke(Action(Of Object, Object()))
+- uid: UnofficialMultiplayerAPI.ISyncMethod.SetPreInvoke*
+  name: SetPreInvoke
+  href: api/UnofficialMultiplayerAPI.ISyncMethod.html#UnofficialMultiplayerAPI_ISyncMethod_SetPreInvoke_
+  commentId: Overload:UnofficialMultiplayerAPI.ISyncMethod.SetPreInvoke
+  isSpec: "True"
+  fullName: UnofficialMultiplayerAPI.ISyncMethod.SetPreInvoke
+  nameWithType: ISyncMethod.SetPreInvoke
+- uid: UnofficialMultiplayerAPI.ISyncMethod.SetVersion(System.Int32)
+  name: SetVersion(Int32)
+  href: api/UnofficialMultiplayerAPI.ISyncMethod.html#UnofficialMultiplayerAPI_ISyncMethod_SetVersion_System_Int32_
+  commentId: M:UnofficialMultiplayerAPI.ISyncMethod.SetVersion(System.Int32)
+  fullName: UnofficialMultiplayerAPI.ISyncMethod.SetVersion(System.Int32)
+  nameWithType: ISyncMethod.SetVersion(Int32)
+- uid: UnofficialMultiplayerAPI.ISyncMethod.SetVersion*
+  name: SetVersion
+  href: api/UnofficialMultiplayerAPI.ISyncMethod.html#UnofficialMultiplayerAPI_ISyncMethod_SetVersion_
+  commentId: Overload:UnofficialMultiplayerAPI.ISyncMethod.SetVersion
+  isSpec: "True"
+  fullName: UnofficialMultiplayerAPI.ISyncMethod.SetVersion
+  nameWithType: ISyncMethod.SetVersion
+- uid: UnofficialMultiplayerAPI.MPApi
+  name: MPApi
+  href: api/UnofficialMultiplayerAPI.MPApi.html
+  commentId: T:UnofficialMultiplayerAPI.MPApi
+  fullName: UnofficialMultiplayerAPI.MPApi
+  nameWithType: MPApi
+- uid: UnofficialMultiplayerAPI.MPApi.enabled
+  name: enabled
+  href: api/UnofficialMultiplayerAPI.MPApi.html#UnofficialMultiplayerAPI_MPApi_enabled
+  commentId: F:UnofficialMultiplayerAPI.MPApi.enabled
+  fullName: UnofficialMultiplayerAPI.MPApi.enabled
+  nameWithType: MPApi.enabled
+- uid: UnofficialMultiplayerAPI.MPApi.FieldWatchPostfix
+  name: FieldWatchPostfix()
+  href: api/UnofficialMultiplayerAPI.MPApi.html#UnofficialMultiplayerAPI_MPApi_FieldWatchPostfix
+  commentId: M:UnofficialMultiplayerAPI.MPApi.FieldWatchPostfix
+  fullName: UnofficialMultiplayerAPI.MPApi.FieldWatchPostfix()
+  nameWithType: MPApi.FieldWatchPostfix()
+- uid: UnofficialMultiplayerAPI.MPApi.FieldWatchPostfix*
+  name: FieldWatchPostfix
+  href: api/UnofficialMultiplayerAPI.MPApi.html#UnofficialMultiplayerAPI_MPApi_FieldWatchPostfix_
+  commentId: Overload:UnofficialMultiplayerAPI.MPApi.FieldWatchPostfix
+  isSpec: "True"
+  fullName: UnofficialMultiplayerAPI.MPApi.FieldWatchPostfix
+  nameWithType: MPApi.FieldWatchPostfix
+- uid: UnofficialMultiplayerAPI.MPApi.FieldWatchPrefix
+  name: FieldWatchPrefix()
+  href: api/UnofficialMultiplayerAPI.MPApi.html#UnofficialMultiplayerAPI_MPApi_FieldWatchPrefix
+  commentId: M:UnofficialMultiplayerAPI.MPApi.FieldWatchPrefix
+  fullName: UnofficialMultiplayerAPI.MPApi.FieldWatchPrefix()
+  nameWithType: MPApi.FieldWatchPrefix()
+- uid: UnofficialMultiplayerAPI.MPApi.FieldWatchPrefix*
+  name: FieldWatchPrefix
+  href: api/UnofficialMultiplayerAPI.MPApi.html#UnofficialMultiplayerAPI_MPApi_FieldWatchPrefix_
+  commentId: Overload:UnofficialMultiplayerAPI.MPApi.FieldWatchPrefix
+  isSpec: "True"
+  fullName: UnofficialMultiplayerAPI.MPApi.FieldWatchPrefix
+  nameWithType: MPApi.FieldWatchPrefix
+- uid: UnofficialMultiplayerAPI.MPApi.IsHosting
+  name: IsHosting
+  href: api/UnofficialMultiplayerAPI.MPApi.html#UnofficialMultiplayerAPI_MPApi_IsHosting
+  commentId: P:UnofficialMultiplayerAPI.MPApi.IsHosting
+  fullName: UnofficialMultiplayerAPI.MPApi.IsHosting
+  nameWithType: MPApi.IsHosting
+- uid: UnofficialMultiplayerAPI.MPApi.IsHosting*
+  name: IsHosting
+  href: api/UnofficialMultiplayerAPI.MPApi.html#UnofficialMultiplayerAPI_MPApi_IsHosting_
+  commentId: Overload:UnofficialMultiplayerAPI.MPApi.IsHosting
+  isSpec: "True"
+  fullName: UnofficialMultiplayerAPI.MPApi.IsHosting
+  nameWithType: MPApi.IsHosting
+- uid: UnofficialMultiplayerAPI.MPApi.IsInMultiplayer
+  name: IsInMultiplayer
+  href: api/UnofficialMultiplayerAPI.MPApi.html#UnofficialMultiplayerAPI_MPApi_IsInMultiplayer
+  commentId: P:UnofficialMultiplayerAPI.MPApi.IsInMultiplayer
+  fullName: UnofficialMultiplayerAPI.MPApi.IsInMultiplayer
+  nameWithType: MPApi.IsInMultiplayer
+- uid: UnofficialMultiplayerAPI.MPApi.IsInMultiplayer*
+  name: IsInMultiplayer
+  href: api/UnofficialMultiplayerAPI.MPApi.html#UnofficialMultiplayerAPI_MPApi_IsInMultiplayer_
+  commentId: Overload:UnofficialMultiplayerAPI.MPApi.IsInMultiplayer
+  isSpec: "True"
+  fullName: UnofficialMultiplayerAPI.MPApi.IsInMultiplayer
+  nameWithType: MPApi.IsInMultiplayer
+- uid: UnofficialMultiplayerAPI.MPApi.PlayerName
+  name: PlayerName
+  href: api/UnofficialMultiplayerAPI.MPApi.html#UnofficialMultiplayerAPI_MPApi_PlayerName
+  commentId: P:UnofficialMultiplayerAPI.MPApi.PlayerName
+  fullName: UnofficialMultiplayerAPI.MPApi.PlayerName
+  nameWithType: MPApi.PlayerName
+- uid: UnofficialMultiplayerAPI.MPApi.PlayerName*
+  name: PlayerName
+  href: api/UnofficialMultiplayerAPI.MPApi.html#UnofficialMultiplayerAPI_MPApi_PlayerName_
+  commentId: Overload:UnofficialMultiplayerAPI.MPApi.PlayerName
+  isSpec: "True"
+  fullName: UnofficialMultiplayerAPI.MPApi.PlayerName
+  nameWithType: MPApi.PlayerName
+- uid: UnofficialMultiplayerAPI.MPApi.RegisterSyncMethod(System.Reflection.MethodInfo,UnofficialMultiplayerAPI.SyncType[])
+  name: RegisterSyncMethod(MethodInfo, SyncType[])
+  href: api/UnofficialMultiplayerAPI.MPApi.html#UnofficialMultiplayerAPI_MPApi_RegisterSyncMethod_System_Reflection_MethodInfo_UnofficialMultiplayerAPI_SyncType___
+  commentId: M:UnofficialMultiplayerAPI.MPApi.RegisterSyncMethod(System.Reflection.MethodInfo,UnofficialMultiplayerAPI.SyncType[])
+  name.vb: RegisterSyncMethod(MethodInfo, SyncType())
+  fullName: UnofficialMultiplayerAPI.MPApi.RegisterSyncMethod(System.Reflection.MethodInfo, UnofficialMultiplayerAPI.SyncType[])
+  fullName.vb: UnofficialMultiplayerAPI.MPApi.RegisterSyncMethod(System.Reflection.MethodInfo, UnofficialMultiplayerAPI.SyncType())
+  nameWithType: MPApi.RegisterSyncMethod(MethodInfo, SyncType[])
+  nameWithType.vb: MPApi.RegisterSyncMethod(MethodInfo, SyncType())
+- uid: UnofficialMultiplayerAPI.MPApi.RegisterSyncMethod(System.Type,System.String,UnofficialMultiplayerAPI.SyncType[])
+  name: RegisterSyncMethod(Type, String, SyncType[])
+  href: api/UnofficialMultiplayerAPI.MPApi.html#UnofficialMultiplayerAPI_MPApi_RegisterSyncMethod_System_Type_System_String_UnofficialMultiplayerAPI_SyncType___
+  commentId: M:UnofficialMultiplayerAPI.MPApi.RegisterSyncMethod(System.Type,System.String,UnofficialMultiplayerAPI.SyncType[])
+  name.vb: RegisterSyncMethod(Type, String, SyncType())
+  fullName: UnofficialMultiplayerAPI.MPApi.RegisterSyncMethod(System.Type, System.String, UnofficialMultiplayerAPI.SyncType[])
+  fullName.vb: UnofficialMultiplayerAPI.MPApi.RegisterSyncMethod(System.Type, System.String, UnofficialMultiplayerAPI.SyncType())
+  nameWithType: MPApi.RegisterSyncMethod(Type, String, SyncType[])
+  nameWithType.vb: MPApi.RegisterSyncMethod(Type, String, SyncType())
+- uid: UnofficialMultiplayerAPI.MPApi.RegisterSyncMethod*
+  name: RegisterSyncMethod
+  href: api/UnofficialMultiplayerAPI.MPApi.html#UnofficialMultiplayerAPI_MPApi_RegisterSyncMethod_
+  commentId: Overload:UnofficialMultiplayerAPI.MPApi.RegisterSyncMethod
+  isSpec: "True"
+  fullName: UnofficialMultiplayerAPI.MPApi.RegisterSyncMethod
+  nameWithType: MPApi.RegisterSyncMethod
+- uid: UnofficialMultiplayerAPI.MPApi.SyncField(System.Type,System.String)
+  name: SyncField(Type, String)
+  href: api/UnofficialMultiplayerAPI.MPApi.html#UnofficialMultiplayerAPI_MPApi_SyncField_System_Type_System_String_
+  commentId: M:UnofficialMultiplayerAPI.MPApi.SyncField(System.Type,System.String)
+  fullName: UnofficialMultiplayerAPI.MPApi.SyncField(System.Type, System.String)
+  nameWithType: MPApi.SyncField(Type, String)
+- uid: UnofficialMultiplayerAPI.MPApi.SyncField*
+  name: SyncField
+  href: api/UnofficialMultiplayerAPI.MPApi.html#UnofficialMultiplayerAPI_MPApi_SyncField_
+  commentId: Overload:UnofficialMultiplayerAPI.MPApi.SyncField
+  isSpec: "True"
+  fullName: UnofficialMultiplayerAPI.MPApi.SyncField
+  nameWithType: MPApi.SyncField
+- uid: UnofficialMultiplayerAPI.MPApi.Watch(UnofficialMultiplayerAPI.ISyncField,System.Object,System.Object)
+  name: Watch(ISyncField, Object, Object)
+  href: api/UnofficialMultiplayerAPI.MPApi.html#UnofficialMultiplayerAPI_MPApi_Watch_UnofficialMultiplayerAPI_ISyncField_System_Object_System_Object_
+  commentId: M:UnofficialMultiplayerAPI.MPApi.Watch(UnofficialMultiplayerAPI.ISyncField,System.Object,System.Object)
+  fullName: UnofficialMultiplayerAPI.MPApi.Watch(UnofficialMultiplayerAPI.ISyncField, System.Object, System.Object)
+  nameWithType: MPApi.Watch(ISyncField, Object, Object)
+- uid: UnofficialMultiplayerAPI.MPApi.Watch*
+  name: Watch
+  href: api/UnofficialMultiplayerAPI.MPApi.html#UnofficialMultiplayerAPI_MPApi_Watch_
+  commentId: Overload:UnofficialMultiplayerAPI.MPApi.Watch
+  isSpec: "True"
+  fullName: UnofficialMultiplayerAPI.MPApi.Watch
+  nameWithType: MPApi.Watch
+- uid: UnofficialMultiplayerAPI.SyncContext
+  name: SyncContext
+  href: api/UnofficialMultiplayerAPI.SyncContext.html
+  commentId: T:UnofficialMultiplayerAPI.SyncContext
+  fullName: UnofficialMultiplayerAPI.SyncContext
+  nameWithType: SyncContext
+- uid: UnofficialMultiplayerAPI.SyncContext.CurrentMap
+  name: CurrentMap
+  href: api/UnofficialMultiplayerAPI.SyncContext.html#UnofficialMultiplayerAPI_SyncContext_CurrentMap
+  commentId: F:UnofficialMultiplayerAPI.SyncContext.CurrentMap
+  fullName: UnofficialMultiplayerAPI.SyncContext.CurrentMap
+  nameWithType: SyncContext.CurrentMap
+- uid: UnofficialMultiplayerAPI.SyncContext.MapMouseCell
+  name: MapMouseCell
+  href: api/UnofficialMultiplayerAPI.SyncContext.html#UnofficialMultiplayerAPI_SyncContext_MapMouseCell
+  commentId: F:UnofficialMultiplayerAPI.SyncContext.MapMouseCell
+  fullName: UnofficialMultiplayerAPI.SyncContext.MapMouseCell
+  nameWithType: SyncContext.MapMouseCell
+- uid: UnofficialMultiplayerAPI.SyncContext.MapSelected
+  name: MapSelected
+  href: api/UnofficialMultiplayerAPI.SyncContext.html#UnofficialMultiplayerAPI_SyncContext_MapSelected
+  commentId: F:UnofficialMultiplayerAPI.SyncContext.MapSelected
+  fullName: UnofficialMultiplayerAPI.SyncContext.MapSelected
+  nameWithType: SyncContext.MapSelected
+- uid: UnofficialMultiplayerAPI.SyncContext.None
+  name: None
+  href: api/UnofficialMultiplayerAPI.SyncContext.html#UnofficialMultiplayerAPI_SyncContext_None
+  commentId: F:UnofficialMultiplayerAPI.SyncContext.None
+  fullName: UnofficialMultiplayerAPI.SyncContext.None
+  nameWithType: SyncContext.None
+- uid: UnofficialMultiplayerAPI.SyncContext.QueueOrder_Down
+  name: QueueOrder_Down
+  href: api/UnofficialMultiplayerAPI.SyncContext.html#UnofficialMultiplayerAPI_SyncContext_QueueOrder_Down
+  commentId: F:UnofficialMultiplayerAPI.SyncContext.QueueOrder_Down
+  fullName: UnofficialMultiplayerAPI.SyncContext.QueueOrder_Down
+  nameWithType: SyncContext.QueueOrder_Down
+- uid: UnofficialMultiplayerAPI.SyncContext.WorldSelected
+  name: WorldSelected
+  href: api/UnofficialMultiplayerAPI.SyncContext.html#UnofficialMultiplayerAPI_SyncContext_WorldSelected
+  commentId: F:UnofficialMultiplayerAPI.SyncContext.WorldSelected
+  fullName: UnofficialMultiplayerAPI.SyncContext.WorldSelected
+  nameWithType: SyncContext.WorldSelected
+- uid: UnofficialMultiplayerAPI.SyncerAttribute
+  name: SyncerAttribute
+  href: api/UnofficialMultiplayerAPI.SyncerAttribute.html
+  commentId: T:UnofficialMultiplayerAPI.SyncerAttribute
+  fullName: UnofficialMultiplayerAPI.SyncerAttribute
+  nameWithType: SyncerAttribute
+- uid: UnofficialMultiplayerAPI.SyncerAttribute.isImplicit
+  name: isImplicit
+  href: api/UnofficialMultiplayerAPI.SyncerAttribute.html#UnofficialMultiplayerAPI_SyncerAttribute_isImplicit
+  commentId: F:UnofficialMultiplayerAPI.SyncerAttribute.isImplicit
+  fullName: UnofficialMultiplayerAPI.SyncerAttribute.isImplicit
+  nameWithType: SyncerAttribute.isImplicit
+- uid: UnofficialMultiplayerAPI.SyncerAttribute.shouldConstruct
+  name: shouldConstruct
+  href: api/UnofficialMultiplayerAPI.SyncerAttribute.html#UnofficialMultiplayerAPI_SyncerAttribute_shouldConstruct
+  commentId: F:UnofficialMultiplayerAPI.SyncerAttribute.shouldConstruct
+  fullName: UnofficialMultiplayerAPI.SyncerAttribute.shouldConstruct
+  nameWithType: SyncerAttribute.shouldConstruct
+- uid: UnofficialMultiplayerAPI.SyncMethodAttribute
+  name: SyncMethodAttribute
+  href: api/UnofficialMultiplayerAPI.SyncMethodAttribute.html
+  commentId: T:UnofficialMultiplayerAPI.SyncMethodAttribute
+  fullName: UnofficialMultiplayerAPI.SyncMethodAttribute
+  nameWithType: SyncMethodAttribute
+- uid: UnofficialMultiplayerAPI.SyncMethodAttribute.#ctor(UnofficialMultiplayerAPI.SyncContext)
+  name: SyncMethodAttribute(SyncContext)
+  href: api/UnofficialMultiplayerAPI.SyncMethodAttribute.html#UnofficialMultiplayerAPI_SyncMethodAttribute__ctor_UnofficialMultiplayerAPI_SyncContext_
+  commentId: M:UnofficialMultiplayerAPI.SyncMethodAttribute.#ctor(UnofficialMultiplayerAPI.SyncContext)
+  fullName: UnofficialMultiplayerAPI.SyncMethodAttribute.SyncMethodAttribute(UnofficialMultiplayerAPI.SyncContext)
+  nameWithType: SyncMethodAttribute.SyncMethodAttribute(SyncContext)
+- uid: UnofficialMultiplayerAPI.SyncMethodAttribute.#ctor*
+  name: SyncMethodAttribute
+  href: api/UnofficialMultiplayerAPI.SyncMethodAttribute.html#UnofficialMultiplayerAPI_SyncMethodAttribute__ctor_
+  commentId: Overload:UnofficialMultiplayerAPI.SyncMethodAttribute.#ctor
+  isSpec: "True"
+  fullName: UnofficialMultiplayerAPI.SyncMethodAttribute.SyncMethodAttribute
+  nameWithType: SyncMethodAttribute.SyncMethodAttribute
+- uid: UnofficialMultiplayerAPI.SyncMethodAttribute.cancelIfAnyArgNull
+  name: cancelIfAnyArgNull
+  href: api/UnofficialMultiplayerAPI.SyncMethodAttribute.html#UnofficialMultiplayerAPI_SyncMethodAttribute_cancelIfAnyArgNull
+  commentId: F:UnofficialMultiplayerAPI.SyncMethodAttribute.cancelIfAnyArgNull
+  fullName: UnofficialMultiplayerAPI.SyncMethodAttribute.cancelIfAnyArgNull
+  nameWithType: SyncMethodAttribute.cancelIfAnyArgNull
+- uid: UnofficialMultiplayerAPI.SyncMethodAttribute.cancelIfNoSelectedMapObjects
+  name: cancelIfNoSelectedMapObjects
+  href: api/UnofficialMultiplayerAPI.SyncMethodAttribute.html#UnofficialMultiplayerAPI_SyncMethodAttribute_cancelIfNoSelectedMapObjects
+  commentId: F:UnofficialMultiplayerAPI.SyncMethodAttribute.cancelIfNoSelectedMapObjects
+  fullName: UnofficialMultiplayerAPI.SyncMethodAttribute.cancelIfNoSelectedMapObjects
+  nameWithType: SyncMethodAttribute.cancelIfNoSelectedMapObjects
+- uid: UnofficialMultiplayerAPI.SyncMethodAttribute.cancelIfNoSelectedWorldObjects
+  name: cancelIfNoSelectedWorldObjects
+  href: api/UnofficialMultiplayerAPI.SyncMethodAttribute.html#UnofficialMultiplayerAPI_SyncMethodAttribute_cancelIfNoSelectedWorldObjects
+  commentId: F:UnofficialMultiplayerAPI.SyncMethodAttribute.cancelIfNoSelectedWorldObjects
+  fullName: UnofficialMultiplayerAPI.SyncMethodAttribute.cancelIfNoSelectedWorldObjects
+  nameWithType: SyncMethodAttribute.cancelIfNoSelectedWorldObjects
+- uid: UnofficialMultiplayerAPI.SyncMethodAttribute.context
+  name: context
+  href: api/UnofficialMultiplayerAPI.SyncMethodAttribute.html#UnofficialMultiplayerAPI_SyncMethodAttribute_context
+  commentId: F:UnofficialMultiplayerAPI.SyncMethodAttribute.context
+  fullName: UnofficialMultiplayerAPI.SyncMethodAttribute.context
+  nameWithType: SyncMethodAttribute.context
+- uid: UnofficialMultiplayerAPI.SyncMethodAttribute.exposeParameters
+  name: exposeParameters
+  href: api/UnofficialMultiplayerAPI.SyncMethodAttribute.html#UnofficialMultiplayerAPI_SyncMethodAttribute_exposeParameters
+  commentId: F:UnofficialMultiplayerAPI.SyncMethodAttribute.exposeParameters
+  fullName: UnofficialMultiplayerAPI.SyncMethodAttribute.exposeParameters
+  nameWithType: SyncMethodAttribute.exposeParameters
+- uid: UnofficialMultiplayerAPI.SyncMethodAttribute.setDebugOnly
+  name: setDebugOnly
+  href: api/UnofficialMultiplayerAPI.SyncMethodAttribute.html#UnofficialMultiplayerAPI_SyncMethodAttribute_setDebugOnly
+  commentId: F:UnofficialMultiplayerAPI.SyncMethodAttribute.setDebugOnly
+  fullName: UnofficialMultiplayerAPI.SyncMethodAttribute.setDebugOnly
+  nameWithType: SyncMethodAttribute.setDebugOnly
+- uid: UnofficialMultiplayerAPI.SyncWorker
+  name: SyncWorker
+  href: api/UnofficialMultiplayerAPI.SyncWorker.html
+  commentId: T:UnofficialMultiplayerAPI.SyncWorker
+  fullName: UnofficialMultiplayerAPI.SyncWorker
+  nameWithType: SyncWorker
+- uid: UnofficialMultiplayerAPI.SyncWorker.#ctor(System.Boolean)
+  name: SyncWorker(Boolean)
+  href: api/UnofficialMultiplayerAPI.SyncWorker.html#UnofficialMultiplayerAPI_SyncWorker__ctor_System_Boolean_
+  commentId: M:UnofficialMultiplayerAPI.SyncWorker.#ctor(System.Boolean)
+  fullName: UnofficialMultiplayerAPI.SyncWorker.SyncWorker(System.Boolean)
+  nameWithType: SyncWorker.SyncWorker(Boolean)
+- uid: UnofficialMultiplayerAPI.SyncWorker.#ctor*
+  name: SyncWorker
+  href: api/UnofficialMultiplayerAPI.SyncWorker.html#UnofficialMultiplayerAPI_SyncWorker__ctor_
+  commentId: Overload:UnofficialMultiplayerAPI.SyncWorker.#ctor
+  isSpec: "True"
+  fullName: UnofficialMultiplayerAPI.SyncWorker.SyncWorker
+  nameWithType: SyncWorker.SyncWorker
+- uid: UnofficialMultiplayerAPI.SyncWorker.Bind(System.Boolean@)
+  name: Bind(ref Boolean)
+  href: api/UnofficialMultiplayerAPI.SyncWorker.html#UnofficialMultiplayerAPI_SyncWorker_Bind_System_Boolean__
+  commentId: M:UnofficialMultiplayerAPI.SyncWorker.Bind(System.Boolean@)
+  name.vb: Bind(ByRef Boolean)
+  fullName: UnofficialMultiplayerAPI.SyncWorker.Bind(ref System.Boolean)
+  fullName.vb: UnofficialMultiplayerAPI.SyncWorker.Bind(ByRef System.Boolean)
+  nameWithType: SyncWorker.Bind(ref Boolean)
+  nameWithType.vb: SyncWorker.Bind(ByRef Boolean)
+- uid: UnofficialMultiplayerAPI.SyncWorker.Bind(System.Byte@)
+  name: Bind(ref Byte)
+  href: api/UnofficialMultiplayerAPI.SyncWorker.html#UnofficialMultiplayerAPI_SyncWorker_Bind_System_Byte__
+  commentId: M:UnofficialMultiplayerAPI.SyncWorker.Bind(System.Byte@)
+  name.vb: Bind(ByRef Byte)
+  fullName: UnofficialMultiplayerAPI.SyncWorker.Bind(ref System.Byte)
+  fullName.vb: UnofficialMultiplayerAPI.SyncWorker.Bind(ByRef System.Byte)
+  nameWithType: SyncWorker.Bind(ref Byte)
+  nameWithType.vb: SyncWorker.Bind(ByRef Byte)
+- uid: UnofficialMultiplayerAPI.SyncWorker.Bind(System.Double@)
+  name: Bind(ref Double)
+  href: api/UnofficialMultiplayerAPI.SyncWorker.html#UnofficialMultiplayerAPI_SyncWorker_Bind_System_Double__
+  commentId: M:UnofficialMultiplayerAPI.SyncWorker.Bind(System.Double@)
+  name.vb: Bind(ByRef Double)
+  fullName: UnofficialMultiplayerAPI.SyncWorker.Bind(ref System.Double)
+  fullName.vb: UnofficialMultiplayerAPI.SyncWorker.Bind(ByRef System.Double)
+  nameWithType: SyncWorker.Bind(ref Double)
+  nameWithType.vb: SyncWorker.Bind(ByRef Double)
+- uid: UnofficialMultiplayerAPI.SyncWorker.Bind(System.Int16@)
+  name: Bind(ref Int16)
+  href: api/UnofficialMultiplayerAPI.SyncWorker.html#UnofficialMultiplayerAPI_SyncWorker_Bind_System_Int16__
+  commentId: M:UnofficialMultiplayerAPI.SyncWorker.Bind(System.Int16@)
+  name.vb: Bind(ByRef Int16)
+  fullName: UnofficialMultiplayerAPI.SyncWorker.Bind(ref System.Int16)
+  fullName.vb: UnofficialMultiplayerAPI.SyncWorker.Bind(ByRef System.Int16)
+  nameWithType: SyncWorker.Bind(ref Int16)
+  nameWithType.vb: SyncWorker.Bind(ByRef Int16)
+- uid: UnofficialMultiplayerAPI.SyncWorker.Bind(System.Int32@)
+  name: Bind(ref Int32)
+  href: api/UnofficialMultiplayerAPI.SyncWorker.html#UnofficialMultiplayerAPI_SyncWorker_Bind_System_Int32__
+  commentId: M:UnofficialMultiplayerAPI.SyncWorker.Bind(System.Int32@)
+  name.vb: Bind(ByRef Int32)
+  fullName: UnofficialMultiplayerAPI.SyncWorker.Bind(ref System.Int32)
+  fullName.vb: UnofficialMultiplayerAPI.SyncWorker.Bind(ByRef System.Int32)
+  nameWithType: SyncWorker.Bind(ref Int32)
+  nameWithType.vb: SyncWorker.Bind(ByRef Int32)
+- uid: UnofficialMultiplayerAPI.SyncWorker.Bind(System.Int64@)
+  name: Bind(ref Int64)
+  href: api/UnofficialMultiplayerAPI.SyncWorker.html#UnofficialMultiplayerAPI_SyncWorker_Bind_System_Int64__
+  commentId: M:UnofficialMultiplayerAPI.SyncWorker.Bind(System.Int64@)
+  name.vb: Bind(ByRef Int64)
+  fullName: UnofficialMultiplayerAPI.SyncWorker.Bind(ref System.Int64)
+  fullName.vb: UnofficialMultiplayerAPI.SyncWorker.Bind(ByRef System.Int64)
+  nameWithType: SyncWorker.Bind(ref Int64)
+  nameWithType.vb: SyncWorker.Bind(ByRef Int64)
+- uid: UnofficialMultiplayerAPI.SyncWorker.Bind(System.Object,System.String)
+  name: Bind(Object, String)
+  href: api/UnofficialMultiplayerAPI.SyncWorker.html#UnofficialMultiplayerAPI_SyncWorker_Bind_System_Object_System_String_
+  commentId: M:UnofficialMultiplayerAPI.SyncWorker.Bind(System.Object,System.String)
+  fullName: UnofficialMultiplayerAPI.SyncWorker.Bind(System.Object, System.String)
+  nameWithType: SyncWorker.Bind(Object, String)
+- uid: UnofficialMultiplayerAPI.SyncWorker.Bind(System.SByte@)
+  name: Bind(ref SByte)
+  href: api/UnofficialMultiplayerAPI.SyncWorker.html#UnofficialMultiplayerAPI_SyncWorker_Bind_System_SByte__
+  commentId: M:UnofficialMultiplayerAPI.SyncWorker.Bind(System.SByte@)
+  name.vb: Bind(ByRef SByte)
+  fullName: UnofficialMultiplayerAPI.SyncWorker.Bind(ref System.SByte)
+  fullName.vb: UnofficialMultiplayerAPI.SyncWorker.Bind(ByRef System.SByte)
+  nameWithType: SyncWorker.Bind(ref SByte)
+  nameWithType.vb: SyncWorker.Bind(ByRef SByte)
+- uid: UnofficialMultiplayerAPI.SyncWorker.Bind(System.Single@)
+  name: Bind(ref Single)
+  href: api/UnofficialMultiplayerAPI.SyncWorker.html#UnofficialMultiplayerAPI_SyncWorker_Bind_System_Single__
+  commentId: M:UnofficialMultiplayerAPI.SyncWorker.Bind(System.Single@)
+  name.vb: Bind(ByRef Single)
+  fullName: UnofficialMultiplayerAPI.SyncWorker.Bind(ref System.Single)
+  fullName.vb: UnofficialMultiplayerAPI.SyncWorker.Bind(ByRef System.Single)
+  nameWithType: SyncWorker.Bind(ref Single)
+  nameWithType.vb: SyncWorker.Bind(ByRef Single)
+- uid: UnofficialMultiplayerAPI.SyncWorker.Bind(System.String@)
+  name: Bind(ref String)
+  href: api/UnofficialMultiplayerAPI.SyncWorker.html#UnofficialMultiplayerAPI_SyncWorker_Bind_System_String__
+  commentId: M:UnofficialMultiplayerAPI.SyncWorker.Bind(System.String@)
+  name.vb: Bind(ByRef String)
+  fullName: UnofficialMultiplayerAPI.SyncWorker.Bind(ref System.String)
+  fullName.vb: UnofficialMultiplayerAPI.SyncWorker.Bind(ByRef System.String)
+  nameWithType: SyncWorker.Bind(ref String)
+  nameWithType.vb: SyncWorker.Bind(ByRef String)
+- uid: UnofficialMultiplayerAPI.SyncWorker.Bind(System.UInt16@)
+  name: Bind(ref UInt16)
+  href: api/UnofficialMultiplayerAPI.SyncWorker.html#UnofficialMultiplayerAPI_SyncWorker_Bind_System_UInt16__
+  commentId: M:UnofficialMultiplayerAPI.SyncWorker.Bind(System.UInt16@)
+  name.vb: Bind(ByRef UInt16)
+  fullName: UnofficialMultiplayerAPI.SyncWorker.Bind(ref System.UInt16)
+  fullName.vb: UnofficialMultiplayerAPI.SyncWorker.Bind(ByRef System.UInt16)
+  nameWithType: SyncWorker.Bind(ref UInt16)
+  nameWithType.vb: SyncWorker.Bind(ByRef UInt16)
+- uid: UnofficialMultiplayerAPI.SyncWorker.Bind(System.UInt32@)
+  name: Bind(ref UInt32)
+  href: api/UnofficialMultiplayerAPI.SyncWorker.html#UnofficialMultiplayerAPI_SyncWorker_Bind_System_UInt32__
+  commentId: M:UnofficialMultiplayerAPI.SyncWorker.Bind(System.UInt32@)
+  name.vb: Bind(ByRef UInt32)
+  fullName: UnofficialMultiplayerAPI.SyncWorker.Bind(ref System.UInt32)
+  fullName.vb: UnofficialMultiplayerAPI.SyncWorker.Bind(ByRef System.UInt32)
+  nameWithType: SyncWorker.Bind(ref UInt32)
+  nameWithType.vb: SyncWorker.Bind(ByRef UInt32)
+- uid: UnofficialMultiplayerAPI.SyncWorker.Bind(System.UInt64@)
+  name: Bind(ref UInt64)
+  href: api/UnofficialMultiplayerAPI.SyncWorker.html#UnofficialMultiplayerAPI_SyncWorker_Bind_System_UInt64__
+  commentId: M:UnofficialMultiplayerAPI.SyncWorker.Bind(System.UInt64@)
+  name.vb: Bind(ByRef UInt64)
+  fullName: UnofficialMultiplayerAPI.SyncWorker.Bind(ref System.UInt64)
+  fullName.vb: UnofficialMultiplayerAPI.SyncWorker.Bind(ByRef System.UInt64)
+  nameWithType: SyncWorker.Bind(ref UInt64)
+  nameWithType.vb: SyncWorker.Bind(ByRef UInt64)
+- uid: UnofficialMultiplayerAPI.SyncWorker.Bind(UnofficialMultiplayerAPI.ISyncable@)
+  name: Bind(ref ISyncable)
+  href: api/UnofficialMultiplayerAPI.SyncWorker.html#UnofficialMultiplayerAPI_SyncWorker_Bind_UnofficialMultiplayerAPI_ISyncable__
+  commentId: M:UnofficialMultiplayerAPI.SyncWorker.Bind(UnofficialMultiplayerAPI.ISyncable@)
+  name.vb: Bind(ByRef ISyncable)
+  fullName: UnofficialMultiplayerAPI.SyncWorker.Bind(ref UnofficialMultiplayerAPI.ISyncable)
+  fullName.vb: UnofficialMultiplayerAPI.SyncWorker.Bind(ByRef UnofficialMultiplayerAPI.ISyncable)
+  nameWithType: SyncWorker.Bind(ref ISyncable)
+  nameWithType.vb: SyncWorker.Bind(ByRef ISyncable)
+- uid: UnofficialMultiplayerAPI.SyncWorker.Bind*
+  name: Bind
+  href: api/UnofficialMultiplayerAPI.SyncWorker.html#UnofficialMultiplayerAPI_SyncWorker_Bind_
+  commentId: Overload:UnofficialMultiplayerAPI.SyncWorker.Bind
+  isSpec: "True"
+  fullName: UnofficialMultiplayerAPI.SyncWorker.Bind
+  nameWithType: SyncWorker.Bind
+- uid: UnofficialMultiplayerAPI.SyncWorker.Bind``1(``0@)
+  name: Bind<T>(ref T)
+  href: api/UnofficialMultiplayerAPI.SyncWorker.html#UnofficialMultiplayerAPI_SyncWorker_Bind__1___0__
+  commentId: M:UnofficialMultiplayerAPI.SyncWorker.Bind``1(``0@)
+  name.vb: Bind(Of T)(ByRef T)
+  fullName: UnofficialMultiplayerAPI.SyncWorker.Bind<T>(ref T)
+  fullName.vb: UnofficialMultiplayerAPI.SyncWorker.Bind(Of T)(ByRef T)
+  nameWithType: SyncWorker.Bind<T>(ref T)
+  nameWithType.vb: SyncWorker.Bind(Of T)(ByRef T)
+- uid: UnofficialMultiplayerAPI.SyncWorker.isWriting
+  name: isWriting
+  href: api/UnofficialMultiplayerAPI.SyncWorker.html#UnofficialMultiplayerAPI_SyncWorker_isWriting
+  commentId: F:UnofficialMultiplayerAPI.SyncWorker.isWriting
+  fullName: UnofficialMultiplayerAPI.SyncWorker.isWriting
+  nameWithType: SyncWorker.isWriting
+- uid: UnofficialMultiplayerAPI.UninitializedAPI
+  name: UninitializedAPI
+  href: api/UnofficialMultiplayerAPI.UninitializedAPI.html
+  commentId: T:UnofficialMultiplayerAPI.UninitializedAPI
+  fullName: UnofficialMultiplayerAPI.UninitializedAPI
+  nameWithType: UninitializedAPI

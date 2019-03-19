@@ -1,0 +1,40 @@
+apiRules:
+- exclude:
+      uidRegex: ^System\.Attribute
+      type: Type
+
+- exclude:
+      uidRegex: ^System\.Object
+      type: Type
+
+- exclude:
+      uidRegex: ^System\.Exception
+      type: Type
+
+- exclude:
+      uidRegex: ^UnofficialMultiplayerAPI\.IAPI
+      type: Type
+
+- exclude:
+      uidRegex: ^UnofficialMultiplayerAPI\.ISyncDelegate
+      type: Type
+
+- exclude:
+      uidRegex: ^UnofficialMultiplayerAPI\.SyncType
+      type: Type
+
+- exclude:
+      uidRegex: ^System\.Runtime\.InteropServices\._Exception
+      type: Type
+
+- exclude:
+      uidRegex: ^System\.Runtime\.InteropServices\._Attribute
+      type: Type
+
+- exclude:
+      uidRegex: ^System\.Runtime\.Serialization\.ISerializable
+      type: Type
+
+- exclude:
+      uidRegex: ^.+ToString()$
+      type: Method
