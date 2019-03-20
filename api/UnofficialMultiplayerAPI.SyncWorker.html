@@ -1,0 +1,713 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SyncWorker
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SyncWorker
+   ">
+    <meta name="generator" content="docfx 2.40.12.0">
+    
+    <link rel="shortcut icon" href="../favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc">
+    <meta property="docfx:tocrel" content="toc">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../api/UnofficialMultiplayerAPI.html" title="API Documentation">API Documentation</a>
+                      </li>
+                </ul>    </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="UnofficialMultiplayerAPI.html" title="UnofficialMultiplayerAPI" class="">UnofficialMultiplayerAPI</a>
+                        
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="UnofficialMultiplayerAPI.IMultiplayerInit.html" title="IMultiplayerInit" class="">IMultiplayerInit</a>
+                          </li>
+                          <li class="">
+                            <a href="UnofficialMultiplayerAPI.ISyncable.html" title="ISyncable" class="">ISyncable</a>
+                          </li>
+                          <li class="">
+                            <a href="UnofficialMultiplayerAPI.ISyncField.html" title="ISyncField" class="">ISyncField</a>
+                          </li>
+                          <li class="">
+                            <a href="UnofficialMultiplayerAPI.ISyncMethod.html" title="ISyncMethod" class="">ISyncMethod</a>
+                          </li>
+                          <li class="">
+                            <a href="UnofficialMultiplayerAPI.MPApi.html" title="MPApi" class="">MPApi</a>
+                          </li>
+                          <li class="">
+                            <a href="UnofficialMultiplayerAPI.SyncContext.html" title="SyncContext" class="">SyncContext</a>
+                          </li>
+                          <li class="">
+                            <a href="UnofficialMultiplayerAPI.SyncerAttribute.html" title="SyncerAttribute" class="">SyncerAttribute</a>
+                          </li>
+                          <li class="">
+                            <a href="UnofficialMultiplayerAPI.SyncMethodAttribute.html" title="SyncMethodAttribute" class="">SyncMethodAttribute</a>
+                          </li>
+                          <li class="active">
+                            <a href="UnofficialMultiplayerAPI.SyncWorker.html" title="SyncWorker" class="active">SyncWorker</a>
+                          </li>
+                          <li class="">
+                            <a href="UnofficialMultiplayerAPI.UninitializedAPI.html" title="UninitializedAPI" class="">UninitializedAPI</a>
+                          </li>
+                        </ul>  </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UnofficialMultiplayerAPI.SyncWorker">
+  
+  
+  <h1 id="UnofficialMultiplayerAPI_SyncWorker" data-uid="UnofficialMultiplayerAPI.SyncWorker" class="text-break">Class SyncWorker
+  </h1>
+  <div class="markdown level0 summary"><p>An abstract class that can be both a reader and a writer depending on implementation.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">SyncWorker</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UnofficialMultiplayerAPI.html">UnofficialMultiplayerAPI</a></h6>
+  <h6><strong>Assembly</strong>: 0UnofficialMultiplayerAPI.dll</h6>
+  <h5 id="UnofficialMultiplayerAPI_SyncWorker_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class SyncWorker</code></pre>
+  </div>
+  <h5 id="UnofficialMultiplayerAPI_SyncWorker_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>See <a class="xref" href="UnofficialMultiplayerAPI.ISyncable.html">ISyncable</a> and <a class="xref" href="UnofficialMultiplayerAPI.SyncerAttribute.html">SyncerAttribute</a> for usage examples.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="UnofficialMultiplayerAPI_SyncWorker__ctor_" data-uid="UnofficialMultiplayerAPI.SyncWorker.#ctor*"></a>
+  <h4 id="UnofficialMultiplayerAPI_SyncWorker__ctor_System_Boolean_" data-uid="UnofficialMultiplayerAPI.SyncWorker.#ctor(System.Boolean)">SyncWorker(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SyncWorker(bool isWriting)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">isWriting</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="UnofficialMultiplayerAPI_SyncWorker_isWriting" data-uid="UnofficialMultiplayerAPI.SyncWorker.isWriting">isWriting</h4>
+  <div class="markdown level1 summary"><p><span class="xref">true</span> if is currently writing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool isWriting</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="UnofficialMultiplayerAPI_SyncWorker_Bind_" data-uid="UnofficialMultiplayerAPI.SyncWorker.Bind*"></a>
+  <h4 id="UnofficialMultiplayerAPI_SyncWorker_Bind_System_Boolean__" data-uid="UnofficialMultiplayerAPI.SyncWorker.Bind(System.Boolean@)">Bind(ref Boolean)</h4>
+  <div class="markdown level1 summary"><p>Reads or writes an object referenced by <code data-dev-comment-type="paramref" class="paramref">obj</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Bind(ref bool obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>object to bind</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnofficialMultiplayerAPI_SyncWorker_Bind_" data-uid="UnofficialMultiplayerAPI.SyncWorker.Bind*"></a>
+  <h4 id="UnofficialMultiplayerAPI_SyncWorker_Bind_System_Byte__" data-uid="UnofficialMultiplayerAPI.SyncWorker.Bind(System.Byte@)">Bind(ref Byte)</h4>
+  <div class="markdown level1 summary"><p>Reads or writes an object referenced by <code data-dev-comment-type="paramref" class="paramref">obj</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Bind(ref byte obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>object to bind</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnofficialMultiplayerAPI_SyncWorker_Bind_" data-uid="UnofficialMultiplayerAPI.SyncWorker.Bind*"></a>
+  <h4 id="UnofficialMultiplayerAPI_SyncWorker_Bind_System_Double__" data-uid="UnofficialMultiplayerAPI.SyncWorker.Bind(System.Double@)">Bind(ref Double)</h4>
+  <div class="markdown level1 summary"><p>Reads or writes an object referenced by <code data-dev-comment-type="paramref" class="paramref">obj</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Bind(ref double obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.double">Double</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>object to bind</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnofficialMultiplayerAPI_SyncWorker_Bind_" data-uid="UnofficialMultiplayerAPI.SyncWorker.Bind*"></a>
+  <h4 id="UnofficialMultiplayerAPI_SyncWorker_Bind_System_Int16__" data-uid="UnofficialMultiplayerAPI.SyncWorker.Bind(System.Int16@)">Bind(ref Int16)</h4>
+  <div class="markdown level1 summary"><p>Reads or writes an object referenced by <code data-dev-comment-type="paramref" class="paramref">obj</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Bind(ref short obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int16">Int16</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>object to bind</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnofficialMultiplayerAPI_SyncWorker_Bind_" data-uid="UnofficialMultiplayerAPI.SyncWorker.Bind*"></a>
+  <h4 id="UnofficialMultiplayerAPI_SyncWorker_Bind_System_Int32__" data-uid="UnofficialMultiplayerAPI.SyncWorker.Bind(System.Int32@)">Bind(ref Int32)</h4>
+  <div class="markdown level1 summary"><p>Reads or writes an object referenced by <code data-dev-comment-type="paramref" class="paramref">obj</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Bind(ref int obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>object to bind</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnofficialMultiplayerAPI_SyncWorker_Bind_" data-uid="UnofficialMultiplayerAPI.SyncWorker.Bind*"></a>
+  <h4 id="UnofficialMultiplayerAPI_SyncWorker_Bind_System_Int64__" data-uid="UnofficialMultiplayerAPI.SyncWorker.Bind(System.Int64@)">Bind(ref Int64)</h4>
+  <div class="markdown level1 summary"><p>Reads or writes an object referenced by <code data-dev-comment-type="paramref" class="paramref">obj</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Bind(ref long obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>object to bind</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnofficialMultiplayerAPI_SyncWorker_Bind_" data-uid="UnofficialMultiplayerAPI.SyncWorker.Bind*"></a>
+  <h4 id="UnofficialMultiplayerAPI_SyncWorker_Bind_System_Object_System_String_" data-uid="UnofficialMultiplayerAPI.SyncWorker.Bind(System.Object,System.String)">Bind(Object, String)</h4>
+  <div class="markdown level1 summary"><p>Uses reflection to bind a field or property</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Bind(object obj, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>object where the field or property can be found</p>
+<p>if null, <code data-dev-comment-type="paramref" class="paramref">name</code> will point at field from the global namespace</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>path to the field or property</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnofficialMultiplayerAPI_SyncWorker_Bind_" data-uid="UnofficialMultiplayerAPI.SyncWorker.Bind*"></a>
+  <h4 id="UnofficialMultiplayerAPI_SyncWorker_Bind_System_SByte__" data-uid="UnofficialMultiplayerAPI.SyncWorker.Bind(System.SByte@)">Bind(ref SByte)</h4>
+  <div class="markdown level1 summary"><p>Reads or writes an object referenced by <code data-dev-comment-type="paramref" class="paramref">obj</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Bind(ref sbyte obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.sbyte">SByte</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>object to bind</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnofficialMultiplayerAPI_SyncWorker_Bind_" data-uid="UnofficialMultiplayerAPI.SyncWorker.Bind*"></a>
+  <h4 id="UnofficialMultiplayerAPI_SyncWorker_Bind_System_Single__" data-uid="UnofficialMultiplayerAPI.SyncWorker.Bind(System.Single@)">Bind(ref Single)</h4>
+  <div class="markdown level1 summary"><p>Reads or writes an object referenced by <code data-dev-comment-type="paramref" class="paramref">obj</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Bind(ref float obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.single">Single</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>object to bind</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnofficialMultiplayerAPI_SyncWorker_Bind_" data-uid="UnofficialMultiplayerAPI.SyncWorker.Bind*"></a>
+  <h4 id="UnofficialMultiplayerAPI_SyncWorker_Bind_System_String__" data-uid="UnofficialMultiplayerAPI.SyncWorker.Bind(System.String@)">Bind(ref String)</h4>
+  <div class="markdown level1 summary"><p>Reads or writes an object referenced by <code data-dev-comment-type="paramref" class="paramref">obj</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Bind(ref string obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>object to bind</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnofficialMultiplayerAPI_SyncWorker_Bind_" data-uid="UnofficialMultiplayerAPI.SyncWorker.Bind*"></a>
+  <h4 id="UnofficialMultiplayerAPI_SyncWorker_Bind_System_UInt16__" data-uid="UnofficialMultiplayerAPI.SyncWorker.Bind(System.UInt16@)">Bind(ref UInt16)</h4>
+  <div class="markdown level1 summary"><p>Reads or writes an object referenced by <code data-dev-comment-type="paramref" class="paramref">obj</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Bind(ref ushort obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint16">UInt16</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>object to bind</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnofficialMultiplayerAPI_SyncWorker_Bind_" data-uid="UnofficialMultiplayerAPI.SyncWorker.Bind*"></a>
+  <h4 id="UnofficialMultiplayerAPI_SyncWorker_Bind_System_UInt32__" data-uid="UnofficialMultiplayerAPI.SyncWorker.Bind(System.UInt32@)">Bind(ref UInt32)</h4>
+  <div class="markdown level1 summary"><p>Reads or writes an object referenced by <code data-dev-comment-type="paramref" class="paramref">obj</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Bind(ref uint obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint32">UInt32</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>object to bind</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnofficialMultiplayerAPI_SyncWorker_Bind_" data-uid="UnofficialMultiplayerAPI.SyncWorker.Bind*"></a>
+  <h4 id="UnofficialMultiplayerAPI_SyncWorker_Bind_System_UInt64__" data-uid="UnofficialMultiplayerAPI.SyncWorker.Bind(System.UInt64@)">Bind(ref UInt64)</h4>
+  <div class="markdown level1 summary"><p>Reads or writes an object referenced by <code data-dev-comment-type="paramref" class="paramref">obj</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Bind(ref ulong obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uint64">UInt64</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>object to bind</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="UnofficialMultiplayerAPI_SyncWorker_Bind_" data-uid="UnofficialMultiplayerAPI.SyncWorker.Bind*"></a>
+  <h4 id="UnofficialMultiplayerAPI_SyncWorker_Bind_UnofficialMultiplayerAPI_ISyncable__" data-uid="UnofficialMultiplayerAPI.SyncWorker.Bind(UnofficialMultiplayerAPI.ISyncable@)">Bind(ref ISyncable)</h4>
+  <div class="markdown level1 summary"><p>Reads or writes an object inheriting <a class="xref" href="UnofficialMultiplayerAPI.ISyncable.html">ISyncable</a> interface. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Bind(ref ISyncable obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnofficialMultiplayerAPI.ISyncable.html">ISyncable</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>object to bind</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnofficialMultiplayerAPI_SyncWorker_Bind_UnofficialMultiplayerAPI_ISyncable___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Does not create a new object.</p>
+</div>
+  
+  
+  <a id="UnofficialMultiplayerAPI_SyncWorker_Bind_" data-uid="UnofficialMultiplayerAPI.SyncWorker.Bind*"></a>
+  <h4 id="UnofficialMultiplayerAPI_SyncWorker_Bind__1___0__" data-uid="UnofficialMultiplayerAPI.SyncWorker.Bind``1(``0@)">Bind&lt;T&gt;(ref T)</h4>
+  <div class="markdown level1 summary"><p>Reads or writes an object referenced by <code data-dev-comment-type="paramref" class="paramref">obj</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Bind&lt;T&gt;(ref T obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>object to bind</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>type of the object to bind</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UnofficialMultiplayerAPI_SyncWorker_Bind__1___0___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Can read/write types using user defined syncers, <a class="xref" href="UnofficialMultiplayerAPI.ISyncable.html">ISyncable</a>s and readers/writers implemented by the multiplayer mod.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,248 @@
+{
+  "homepages": [],
+  "source_base_path": "D:/Steam/steamapps/common/RimWorld/Mods/Unofficial multiplayer API/Source/Documentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "3eUBfM0GRFJcdyzww4wleQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon.png",
+      "output": {
+        "resource": {
+          "relative_path": "favicon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "AXXxntH84fugeIx/Z6iaUg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "logo.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/UnofficialMultiplayerAPI.IMultiplayerInit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnofficialMultiplayerAPI.IMultiplayerInit.html",
+          "hash": "Nztci+EueLcARhCa9s8gpg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/UnofficialMultiplayerAPI.ISyncField.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnofficialMultiplayerAPI.ISyncField.html",
+          "hash": "HU94WcODPziuQGlZznSIEw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/UnofficialMultiplayerAPI.ISyncMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnofficialMultiplayerAPI.ISyncMethod.html",
+          "hash": "oJT5pszD3KjK2stmByB1xQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/UnofficialMultiplayerAPI.ISyncable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnofficialMultiplayerAPI.ISyncable.html",
+          "hash": "cjUV4z3G/AfRannqk2GOiA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/UnofficialMultiplayerAPI.MPApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnofficialMultiplayerAPI.MPApi.html",
+          "hash": "RuAdROq+pWvfYS2yhgpiMA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/UnofficialMultiplayerAPI.SyncContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnofficialMultiplayerAPI.SyncContext.html",
+          "hash": "cRvkPGhHPPdKibieEnW3ug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/UnofficialMultiplayerAPI.SyncMethodAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnofficialMultiplayerAPI.SyncMethodAttribute.html",
+          "hash": "nx9Gu/dS3YfSV8A7LCqR/Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/UnofficialMultiplayerAPI.SyncWorker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnofficialMultiplayerAPI.SyncWorker.html",
+          "hash": "Nb3SpG4/vhvMQPcrHjp/iA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/UnofficialMultiplayerAPI.SyncerAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnofficialMultiplayerAPI.SyncerAttribute.html",
+          "hash": "xKtraiIWhuBD/v1OIrW+hA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/UnofficialMultiplayerAPI.UninitializedAPI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnofficialMultiplayerAPI.UninitializedAPI.html",
+          "hash": "lT7IHyuUJzguqSW8T2aXZQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "obj/api/UnofficialMultiplayerAPI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnofficialMultiplayerAPI.html",
+          "hash": "YRFtFyMTfyAouZTGTGMeJA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 2,
+          "skipped_file_count": 2
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 11,
+          "skipped_file_count": 3
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
