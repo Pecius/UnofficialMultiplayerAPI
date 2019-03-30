@@ -83,6 +83,15 @@ namespace UnofficialMultiplayerAPI
 		/// <returns>self</returns>
 		void Watch(object target = null, object index = null);
 
+		/// <summary>
+		/// Manually syncs a field.
+		/// </summary>
+		/// <param name="target">An object of type set in the <see cref="ISyncField"/>. Set to null if you're watching a static field.</param>
+		/// <param name="value">Value to apply to the synced field.</param>
+		/// <param name="index">Index in the field path set in <see cref="ISyncField"/></param>
+		/// <returns><see langword="true"/> if the change should be canceled.</returns>
+		bool DoSync(object target, object value, object index = null);
+
 		string ToString();
 	}
 
@@ -153,6 +162,14 @@ namespace UnofficialMultiplayerAPI
 		/// <returns>self</returns>
 		ISyncMethod SetVersion(int version);
 
+		/// <summary>
+		/// Manually calls the synced method.
+		/// </summary>
+		/// <param name="target">Object currently bound to that method. Null if the method is static.</param>
+		/// <param name="args">Parameters to call the method with.</param>
+		/// <returns><see langword="true"/> if the original call should be canceled.</returns>
+		bool DoSync(object target, params object[] args);
+
 		string ToString();
 	}
 
@@ -203,7 +220,7 @@ namespace UnofficialMultiplayerAPI
 	///	}
 	/// </code>
 	/// </example>
-	[AttributeUsage(AttributeTargets.Method)]
+	[AttributeUsage(AttributeTargets.Method/*, AllowMultiple = true*/)]
 	public class SyncerAttribute : Attribute
 	{
 		/// <summary>Decides if the method should get an already constructed object in case of reading data.</summary>
@@ -211,6 +228,18 @@ namespace UnofficialMultiplayerAPI
 
 		/// <summary>Decides if the type specified in the second parameter should also be used as a syncer for all of its subclasses.</summary>
 		public bool isImplicit = false;
+
+		///// <summary>Defines the type that this syncer covers. If not set, the type will be the same as the second parameter.</summary>
+		//public Type[] types = null;
+
+		/*public SyncerAttribute()
+		{
+		}
+
+		public SyncerAttribute(params Type[] types)
+		{
+			this.types = types;
+		}*/
 	}
 
 	/// <summary>
@@ -226,6 +255,11 @@ namespace UnofficialMultiplayerAPI
 		{
 			this.isWriting = isWriting;
 		}
+
+		/// <summary>Reads or writes a <see cref="Type"/> referenced by <paramref name="type"/>.</summary>
+		/// <typeparam name="T">Base type that <paramref name="type"/> derives from.</typeparam>
+		/// <param name="type">type to bind</param>
+		public abstract void BindType<T>(ref Type type);
 
 		/// <summary>Reads or writes an object referenced by <paramref name="obj"/>.</summary>
 		/// <param name="obj">object to bind</param>

@@ -23,7 +23,6 @@ namespace UnofficialMultiplayerAPIHost
 		}
 
 
-		// TODO: cram those in with a transpiler
 		[HarmonyPatch(typeof(Sync), nameof(Sync.ReadSyncObject))]
 		class ReadSyncObject
 		{
@@ -40,14 +39,12 @@ namespace UnofficialMultiplayerAPIHost
 					return false;
 				}
 
-				if(Proxies.IFSync.syncers.TryGetValue(type.Assembly, out SyncerDictionary syncers))
+
+				if(Proxies.IFSync.syncers.TryGetValue(type, out var syncer))
 				{
-					if(syncers.TryGetValue(type, out var syncer))
-					{
-						__result = Syncer.ReadSyncer(null, type, reader: data, syncer: syncer);
-						return false;
-					}
+					return !Syncer.ReadSyncer(null, type, out __result, reader: data, syncer: syncer); ;
 				}
+
 
 				return true;
 			}
@@ -67,14 +64,9 @@ namespace UnofficialMultiplayerAPIHost
 					return false;
 				}
 
-				
-				if (Proxies.IFSync.syncers.TryGetValue(type.Assembly, out SyncerDictionary syncers))
+				if (Proxies.IFSync.syncers.TryGetValue(type, out var syncer))
 				{
-					if (syncers.TryGetValue(type, out var syncer))
-					{
-						Syncer.WriteSyncer(obj, type, writer: data, syncer: syncer);
-						return false;
-					}
+					return !Syncer.WriteSyncer(obj, type, writer: data, syncer: syncer);
 				}
 
 				return true;

@@ -40,64 +40,17 @@ namespace UnofficialMultiplayerAPIHost
 
 			foreach(MethodInfo method in allMethods.Where(m => m.HasAttribute<ClientAPI.SyncMethodAttribute>()))
 			{
-				var attribute = method.TryGetAttribute<ClientAPI.SyncMethodAttribute>();
+				RegisterMethod(method);
+			}
 
-				Log.Debug($"Installing {method.DeclaringType.FullName}::{method}");
-				int[] exposeParameters = attribute.exposeParameters;
-				int paramNum = method.GetParameters().Length;
-
-				if (exposeParameters != null)
-				{
-					if (exposeParameters.Length != paramNum)
-					{
-						Log.Error($"Failed to register a method: Invalid number of parameters to expose in SyncMethod attribute applied to {method.DeclaringType.FullName}::{method}. Expected {paramNum}, got {exposeParameters.Length}");
-						continue;
-					}
-					else if(exposeParameters.Any(p => p < 0 || p >= paramNum))
-					{
-						Log.Error($"Failed to register a method: One or more indexes of parameters to expose in SyncMethod attribute applied to {method.DeclaringType.FullName}::{method} is invalid.");
-						continue;
-					}
-				}
-
-				SyncMethod sm = Sync.RegisterSyncMethod(method, null);
-
-				sm.SetContext((SyncContext)(int)attribute.context);
-
-				if (attribute.cancelIfAnyArgNull)
-					sm.CancelIfAnyArgNull();
-
-				if (attribute.cancelIfNoSelectedMapObjects)
-					sm.CancelIfNoSelectedMapObjects();
-
-				if (attribute.cancelIfNoSelectedWorldObjects)
-					sm.CancelIfNoSelectedWorldObjects();
-
-				if (attribute.setDebugOnly)
-					sm.SetDebugOnly();
-
-				if(exposeParameters != null)
-				{
-					int i = 0;
-
-					try
-					{
-						for (; i < exposeParameters.Length; i++)
-						{
-							Log.Debug($"Exposing parameter {exposeParameters[i]}");
-							sm.ExposeParameter(exposeParameters[i]);
-						}
-					}
-					catch (Exception exc)
-					{
-						Log.Error($"An exception occurred while exposing parameter {i} ({method.GetParameters()[i]}) for method {method.DeclaringType.FullName}::{method}: {exc}");
-					}
-				}
+			foreach(MethodInfo method in allMethods.Where(m => m.HasAttribute<ClientAPI.SyncerAttribute>()))
+			{
+				RegisterSyncer(method);
 			}
 
 			var initializers = allTypes.Where(t => !t.IsInterface && typeof(ClientAPI.IMultiplayerInit).IsAssignableFrom(t));
 
-			foreach(Type t in initializers)
+			foreach (Type t in initializers)
 			{
 				try
 				{
@@ -106,57 +59,124 @@ namespace UnofficialMultiplayerAPIHost
 
 					@if.Init();
 				}
-				catch(Exception exc)
+				catch (Exception exc)
 				{
 					Log.Error($"An exception occurred while calling IMultiplayerInit.Init in {t.Assembly.GetName().Name}.dll\n{exc}", true);
 				}
 			}
+		}
 
-			foreach(MethodInfo method in allMethods.Where(m => m.HasAttribute<ClientAPI.SyncerAttribute>()))
+		private static void RegisterMethod(MethodInfo method)
+		{
+			var attribute = method.TryGetAttribute<ClientAPI.SyncMethodAttribute>();
+
+			Log.Debug($"Installing {method.DeclaringType.FullName}::{method}");
+			int[] exposeParameters = attribute.exposeParameters;
+			int paramNum = method.GetParameters().Length;
+
+			if (exposeParameters != null)
 			{
-				Type[] parameters = method.GetParameters().Select(p => p.ParameterType).ToArray();
-
-				if (!method.IsStatic)
+				if (exposeParameters.Length != paramNum)
 				{
-					Log.Error($"Error in {method.DeclaringType.FullName}::{method}: Syncer method has to be static.");
-					continue;
+					Log.Error($"Failed to register a method: Invalid number of parameters to expose in SyncMethod attribute applied to {method.DeclaringType.FullName}::{method}. Expected {paramNum}, got {exposeParameters.Length}");
+					return;
 				}
-
-				if (parameters.Length != 2)
+				else if (exposeParameters.Any(p => p < 0 || p >= paramNum))
 				{
-					Log.Error($"Error in {method.DeclaringType.FullName}::{method}: Syncer method has an invalid number of parameters.");
-					continue;
+					Log.Error($"Failed to register a method: One or more indexes of parameters to expose in SyncMethod attribute applied to {method.DeclaringType.FullName}::{method} is invalid.");
+					return;
 				}
-
-				if(parameters[0] != typeof(ClientAPI.SyncWorker))
-				{
-					Log.Error($"Error in {method.DeclaringType.FullName}::{method}: Syncer method has an invalid first parameter (got {parameters[0]}, expected ISyncWorker).");
-					continue;
-				}
-
-				if (!parameters[1].IsByRef)
-				{
-					Log.Error($"Error in {method.DeclaringType.FullName}::{method}: Syncer method has an invalid second parameter, should be a ref.");
-					continue;
-				}
-
-				Type type = parameters[1].GetElementType();
-
-				if (!Proxies.IFSync.syncers.TryGetValue(method.DeclaringType.Assembly, out SyncerDictionary dict))
-				{
-					dict = new SyncerDictionary();
-					Proxies.IFSync.syncers.Add(method.DeclaringType.Assembly, dict);
-				}
-
-				var attribute = method.TryGetAttribute<ClientAPI.SyncerAttribute>();
-
-				Log.Debug($"Registered a syncer {method.DeclaringType.FullName}::{method} for type {type} in assembly {method.DeclaringType.Assembly.GetName().Name}");
-
-				if (dict.TryGetValue(type, out var syncer))
-					Log.Warning($"Warning, a syncer for type {type} is already registered!");
-
-				dict.Add(type, DynamicDelegate.Create<SyncerEntry.syncerDelegateRef>(method), attribute.isImplicit, attribute.shouldConstruct);
 			}
+
+			SyncMethod sm = Sync.RegisterSyncMethod(method, null);
+
+			sm.SetContext((SyncContext)(int)attribute.context);
+
+			if (attribute.cancelIfAnyArgNull)
+				sm.CancelIfAnyArgNull();
+
+			if (attribute.cancelIfNoSelectedMapObjects)
+				sm.CancelIfNoSelectedMapObjects();
+
+			if (attribute.cancelIfNoSelectedWorldObjects)
+				sm.CancelIfNoSelectedWorldObjects();
+
+			if (attribute.setDebugOnly)
+				sm.SetDebugOnly();
+
+			if (exposeParameters != null)
+			{
+				int i = 0;
+
+				try
+				{
+					for (; i < exposeParameters.Length; i++)
+					{
+						Log.Debug($"Exposing parameter {exposeParameters[i]}");
+						sm.ExposeParameter(exposeParameters[i]);
+					}
+				}
+				catch (Exception exc)
+				{
+					Log.Error($"An exception occurred while exposing parameter {i} ({method.GetParameters()[i]}) for method {method.DeclaringType.FullName}::{method}: {exc}");
+				}
+			}
+		}
+
+		private static void RegisterSyncer(MethodInfo method)
+		{
+			Type[] parameters = method.GetParameters().Select(p => p.ParameterType).ToArray();
+
+			if (!method.IsStatic)
+			{
+				Log.Error($"Error in {method.DeclaringType.FullName}::{method}: Syncer method has to be static.");
+				return;
+			}
+
+			if (parameters.Length != 2)
+			{
+				Log.Error($"Error in {method.DeclaringType.FullName}::{method}: Syncer method has an invalid number of parameters.");
+				return;
+			}
+
+			if (parameters[0] != typeof(ClientAPI.SyncWorker))
+			{
+				Log.Error($"Error in {method.DeclaringType.FullName}::{method}: Syncer method has an invalid first parameter (got {parameters[0]}, expected ISyncWorker).");
+				return;
+			}
+
+			if (!parameters[1].IsByRef)
+			{
+				Log.Error($"Error in {method.DeclaringType.FullName}::{method}: Syncer method has an invalid second parameter, should be a ref.");
+				return;
+			}
+
+			var type = parameters[1].GetElementType();
+			var attribute = method.TryGetAttribute<ClientAPI.SyncerAttribute>();
+
+			if (attribute.isImplicit)
+			{
+				if (method.ReturnType != typeof(bool))
+				{
+					Log.Error($"Error in {method.DeclaringType.FullName}::{method}: Syncer set as implicit (or the argument type is an interface) requires bool type as a return value.");
+					return;
+				}
+			}
+			else if (method.ReturnType != typeof(void))
+			{
+				Log.Error($"Error in {method.DeclaringType.FullName}::{method}: Syncer set as explicit should have void as a return value.");
+				return;
+			}
+
+			SyncerEntry entry = Proxies.IFSync.syncers.Add(type, attribute.isImplicit, attribute.shouldConstruct);
+			entry.AddSyncer(DynamicDelegate.Create<SyncerEntry.syncerDelegateRef>(method), method.ReturnType == typeof(void));
+
+			if (!(attribute.isImplicit || type.IsInterface) && entry.SyncerCount > 1)
+			{
+				Log.Warning($"Warning in {method.DeclaringType.FullName}::{method}: type {type} has already registered an explicit syncer, the code in this method may be not used.");
+			}
+
+			Log.Debug($"Registered a syncer {method.DeclaringType.FullName}::{method} for type {type} in assembly {method.DeclaringType.Assembly.GetName().Name}");
 		}
 
 		private static void CheckInterfaceVersions()

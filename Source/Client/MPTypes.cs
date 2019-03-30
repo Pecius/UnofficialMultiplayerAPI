@@ -5,6 +5,8 @@ using System.Collections.Specialized;
 using System.Linq;
 using System.Text;
 
+#pragma warning disable CS1591
+
 namespace UnofficialMultiplayerAPI
 {
 	/// <summary>
@@ -66,6 +68,17 @@ namespace UnofficialMultiplayerAPI
 			this.context = context;
 		}
 	}
+
+	/*public static class MPTypeExtensions
+	{
+		public static void Watch(this ISyncField[] group, object target = null, int index = -1)
+		{
+			foreach (ISyncField field in group)
+				if (field.targetType == null || field.targetType.IsAssignableFrom(target.GetType()))
+					field.Watch(target, index);
+		}
+	}*/
+
 
 	public class SyncType
 	{

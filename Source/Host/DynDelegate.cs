@@ -274,18 +274,27 @@ namespace DynDelegate
 				}
 			}
 
-			if (delegateRet != method.ReturnType)
+			Type returnType = method.ReturnType;
+
+			if (delegateRet != returnType)
 			{
 				if (delegateRet == typeof(void))
 					il.Emit(OpCodes.Pop);
 
 				else if (delegateRet == typeof(object))
 				{
-					if (method.ReturnType.IsValueType)
-						il.Emit(OpCodes.Box, method.ReturnType);
+					if (returnType.IsValueType)
+						il.Emit(OpCodes.Box, returnType);
+				}
+				else if(returnType == typeof(void))
+				{
+					if (returnType.IsValueType)
+						il.Emit(OpCodes.Ldc_I4_1);	// temp
+					else
+						il.Emit(OpCodes.Ldnull);
 				}
 				else
-					Convert(il, method.ReturnType, delegateRet, null);
+					Convert(il, returnType, delegateRet, null);
 			}
 
 			il.Emit(OpCodes.Ret);
