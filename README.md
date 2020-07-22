@@ -1,3 +1,5 @@
+The API is now a part of the [RimWorld Multiplayer](https://github.com/rwmt/Multiplayer) and therefore this repository is now archived.
+
 # Welcome!
 This is an API which you can use in your mods to make them compatible with the multiplayer mod.
 
